@@ -1,14 +1,15 @@
-title: Hey, my name is Gerard
-author: Gerard Casas Saez
+title: Hi, I am Ishan 👋
+author: Ishan Sai Vepa
 color: "#2B546B"
 description: |
-  I'm a Senior ML Engineer. I'm specially interested in Machine Learning Infrastructure and Data Engineering. 
-  I graduated from <a href="https://www.colorado.edu/" target="_blank">University of Colorado Boulder</a> in 2019. 
-  In my free time I like to ski, take pictures and read some books.
-  Follow me on <a href="https://twitter.com/casassaez" target="_blank">Twitter</a> to stay updated on my latest adventures.
-domain: gerard.space
-twitter: casassaez
-mastodon: macaw.social/@gerard
+  I have an avid interest in technology and computer science, but also pursue creative passions such 
+  as video production and music. I have produced multiple documentaries and worked on community impact 
+  musician. I'm specially interested in Machine Learning Infrastructure and Data Engineering. 
+  I currently attend <a href="https://www.gatech.edu/" target="_blank">the Georgia Institute of Technology</a>. 
+  I am an avid Manchester United fan, take pictures .
+domain: ishanvepa.com
+twitter: vepaishan
+#mastodon: macaw.social/@gerard
 sass:
     sass_dir: assets/_sass
     style: compressed
