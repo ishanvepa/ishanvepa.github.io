@@ -15,8 +15,8 @@ imageUrl
 }: ProjectProps){
     const ref = useRef<HTMLElement>(null);
     const {scrollYProgress} = useScroll({
-        target: '',
-        offset:["0 1", "0.45 1"],
+        target: ref,
+        offset:["0 1", "0.33 0.75"],
         
 
     });
