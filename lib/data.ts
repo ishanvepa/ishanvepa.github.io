@@ -2,13 +2,13 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
+import corpcommentImg from "@/public/mywebsite_pic.png";
 import rmtdevImg from "@/public/rmtdev.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
 
 import MarioGame1 from "@/public/mariogame1.png";
-import MarioGame2 from "@/public/mariogame2.png";
-import SleepApp1 from "@/public/sleepapphome1.png";
+import MarioGame2 from "../public/mariogame2.png";
+import SleepApp1 from "@/public/sleepapphome1_edit.png";
 import SleepApp2 from "@/public/sleepappleaderboard2.png";
 
 export const links = [
@@ -78,7 +78,7 @@ export const projectsData = [
     description:
       " Used Java and MVVM architecture to code 'Luigi's Mansion'-themed dungeon crawler android game. Utilized UML infrastructures: System-Sequence Diagram, Design Class Diagram, Use-Case Diagram. Implemented software design patterns: Strategy, Observer, Singleton, Factory, Decorator.",
     tags: ["Java", "Android Studio", "Git"],
-    imageUrl: MarioGame1,
+    imageUrl: MarioGame2,
   },
   {
     title: "Gamified Sleep Tracker App",
