@@ -8,7 +8,7 @@ import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from 'react-icons/fa';
 
-import profilePic from "../public/profpic.jpeg";
+import profilePic from "@/public/profpic.jpeg";
 
 export default function Intro() {
   return (
