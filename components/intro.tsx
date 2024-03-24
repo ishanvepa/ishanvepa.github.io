@@ -8,6 +8,8 @@ import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from 'react-icons/fa';
 
+import profilePic from "@/public/profpic.jpeg";
+
 export default function Intro() {
   return (
     <section className="mb-28 max-w-[50rem] text-center sm:mb-0">   
@@ -21,7 +23,7 @@ export default function Intro() {
                     duration: 0.2,
                 }}
                 >
-                    <Image src="https://media.licdn.com/dms/image/D5603AQFjzNQv-eL93w/profile-displayphoto-shrink_200_200/0/1701155035481?e=1709769600&v=beta&t=Ps2AYAP0d7xXjPU2sEsrWRVWw13ImL2aFReEFChWEqs" 
+                    <Image src={profilePic} 
                     alt="Ishan's portrait image"
                     width="300"
                     height="300"
