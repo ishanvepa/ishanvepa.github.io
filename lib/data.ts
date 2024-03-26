@@ -4,7 +4,7 @@ import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import corpcommentImg from "@/public/mywebsite_pic.png";
 import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+import billboardwebscraper from "@/public/billboard_web_scraper_code.png";
 
 import MarioGame1 from "@/public/mariogame1.png";
 import MarioGame2 from "../public/mariogame2.png";
@@ -91,9 +91,9 @@ export const projectsData = [
   {
     title: "Computational Analysis of Contemporary Music",
     description:
-      "Used Figma to create a high fidelity gamified social sleep-tracking app prototype for college students. Iterated on user insights, design principles, and wellness usability.",
+      "Web-scraped Billboard Hot 100, comparative analysis, transcribed melodies, chord progressions, tempos, and keys of songs in Python. Leveraged Python API: BeautifulSoup, urllib, xlsxwriter, openpyxl. Completed research paper guided by the research question: “Why do people enjoy music?”",
     tags: ["Python", "BeautifulSoup", "urllib", "xlsxwriter", "openpyxl"],
-    imageUrl: wordanalyticsImg,
+    imageUrl: billboardwebscraper,
   },
 
 ] as const;
