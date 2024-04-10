@@ -40,28 +40,28 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "Undergraduate Researcher, Data Team Leader",
+    location: "Atlanta, GA",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+      "Led the shift from Excel to Tableau dashboards, improving research administration efficiency. Prototyped app using Figma, streamlining access to InfoReady guides through a user-friendly interface. Collaborated alongside Senior Executive Research Administrators at Georgia Tech. Iterated on root cause analysis to solve centralization and compliance inefficiencies in research.",
     icon: React.createElement(LuGraduationCap),
-    date: "2019",
+    date: "Aug 2023 - Present",
   },
   {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
+    title: "Founder, Director of Post-Production, Web-Development",
+    location: "Tallahassee, FL",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
+      "Reached 200,000+ impressions, through static blog and website in 1 year via configuring SEO. Initiated & managed chapters in Oregon, Michigan, and Connecticut, overseeing 25 members. Led Video Post-Production across all videos and documentaries.",
     icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
+    date: " Jul 2019 – Aug 2022",
   },
   {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
+    title: "Technology Deployment Coordinator",
+    location: "Tallahasee, FL",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
+      "Deployed computer hardware and software to grant 1000+ students access to technology necessary for educational opportunities.",
     icon: React.createElement(FaReact),
-    date: "2021 - present",
+    date: "Jul 2021 - Oct 2021",
   },
 ] as const;
 
@@ -99,23 +99,22 @@ export const projectsData = [
 ] as const;
 
 export const skillsData = [
+  "Java",
+  "C",
+  "Python",
   "HTML",
   "CSS",
-  "JavaScript",
+  "Javascript",
+  "Assembly",
   "TypeScript",
-  "React",
   "Next.js",
-  "Node.js",
   "Git",
-  "Tailwind",
-  "Prisma",
-  "MongoDB",
-  "Redux",
-  "GraphQL",
-  "Apollo",
-  "Express",
-  "PostgreSQL",
-  "Python",
-  "Django",
-  "Framer Motion",
+  "Tailwind CSS",
+  "Adobe Premiere Pro",
+  "Adobe After Effects",
+  "Figma",
+  "Tableau",
+  "AWS Amplify"
+
+
 ] as const;

@@ -5,7 +5,7 @@ import { projectsData } from '@/lib/data';
 
 export default function Projects() {
   return (
-    <section>
+    <section className="scroll-mt-50" id = "projects">
 
         <SectionHeading>My Projects</SectionHeading>
 
