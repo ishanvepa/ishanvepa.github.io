@@ -53,7 +53,7 @@ export const experiencesData = [
     description:
       "Reached 200,000+ impressions, through static blog and website in 1 year via configuring SEO. Initiated & managed chapters in Oregon, Michigan, and Connecticut, overseeing 25 members. Led Video Post-Production across all videos and documentaries.",
     icon: React.createElement(CgWorkAlt),
-    date: " Jul 2019 – Aug 2022",
+    date: " Jul 2019 - Aug 2022",
   },
   {
     title: "Technology Deployment Coordinator",
