@@ -40,7 +40,17 @@ export const links = [
 
 export const experiencesData = [
   {
+    title: "Software Engineering Intern",
+    company: "Datamaxx Group",
+    location: "Tallahassee, FL",
+    description:
+      "Led the shift from Excel to Tableau dashboards, improving research administration efficiency. Prototyped app using Figma, streamlining access to InfoReady guides through a user-friendly interface. Collaborated alongside Senior Executive Research Administrators at Georgia Tech. Iterated on root cause analysis to solve centralization and compliance inefficiencies in research.",
+    icon: React.createElement(LuGraduationCap),
+    date: "May 2024 - Present",
+  },
+  {
     title: "Undergraduate Researcher, Data Team Leader",
+    company: "Georgia Tech Vertically Integrated Project",
     location: "Atlanta, GA",
     description:
       "Led the shift from Excel to Tableau dashboards, improving research administration efficiency. Prototyped app using Figma, streamlining access to InfoReady guides through a user-friendly interface. Collaborated alongside Senior Executive Research Administrators at Georgia Tech. Iterated on root cause analysis to solve centralization and compliance inefficiencies in research.",
@@ -49,6 +59,7 @@ export const experiencesData = [
   },
   {
     title: "Founder, Director of Post-Production, Web-Development",
+    company: "Generation Z Media",
     location: "Tallahassee, FL",
     description:
       "Reached 200,000+ impressions, through static blog and website in 1 year via configuring SEO. Initiated & managed chapters in Oregon, Michigan, and Connecticut, overseeing 25 members. Led Video Post-Production across all videos and documentaries.",
@@ -57,6 +68,7 @@ export const experiencesData = [
   },
   {
     title: "Technology Deployment Coordinator",
+    company: "South City Foundation, E&Y",
     location: "Tallahasee, FL",
     description:
       "Deployed computer hardware and software to grant 1000+ students access to technology necessary for educational opportunities.",
@@ -101,6 +113,9 @@ export const projectsData = [
 export const skillsData = [
   "Java",
   "C",
+  "C#",
+  "ASP.NET Framework",
+  "jQuery",
   "Python",
   "HTML",
   "CSS",
@@ -109,12 +124,15 @@ export const skillsData = [
   "TypeScript",
   "Next.js",
   "Git",
+  "Accurev SCM",
   "Tailwind CSS",
   "Adobe Premiere Pro",
   "Adobe After Effects",
+  "AWS API",
   "Figma",
   "Tableau",
-  "AWS Amplify"
+  "AWS Amplify",
+  "Android Studio",
 
 
 ] as const;
