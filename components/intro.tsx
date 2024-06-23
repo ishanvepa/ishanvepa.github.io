@@ -9,6 +9,8 @@ import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from 'react-icons/fa';
 
 import profilePic from "@/public/profpic.jpeg";
+import TypewriterComponent from 'typewriter-effect';
+import Typewriter from 'typewriter-effect';
 
 export default function Intro() {
   return (
@@ -30,7 +32,7 @@ export default function Intro() {
                     height="300"
                     quality="95"
                     priority={true}
-                    className="h-70 w-70 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
+                    className="h-70 w-70 rounded-full object-cover border-[0.35rem] border-neutral-200 shadow-xl"
                     />
                 </motion.div>   
                 <motion.span className="absolute bottom-0 right-0 text-7xl"
@@ -52,12 +54,18 @@ export default function Intro() {
 
         </div>
 
-        <motion.h1 className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
+        <motion.div className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
             initial = {{ opacity: 0, y: 100 }}
             animate = {{ opacity: 1, y: 0 }}
         >
-            Hello, I am <span className="font-bold">Ishan Vepa</span>.
-        </motion.h1>
+            <Typewriter
+                onInit={(typewriter) => { 
+                    typewriter.typeString('Hello, I am <span style="font-weight:bold;">Ishan Vepa</span>') 
+                        .start(); 
+                        // .stop();
+                    }} 
+            /> 
+        </motion.div>
 
         <motion.div className="flex flex-col gap-5 sm:flex-row"
             initial = {{ opacity: 0, y: 100 }}
@@ -68,11 +76,11 @@ export default function Intro() {
         >
 
         
-            <Link href="#contact" className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition">
+            <Link href="#contact" className="group bg-green-800 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-green-950 active:scale-105 transition">
                 Contact Me <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />    
             </Link>
 
-            <a className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-white active:scale-105 transition cursor-pointer border border-black/10" href="/Ishan_Vepa_Resume.pdf" download>My Resume <HiDownload className="opacity-60 group-hover:translate-y-0.5" />
+            <a className="group text-black bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-white active:scale-105 transition cursor-pointer border border-black/10" href="/Ishan_Vepa_Resume.pdf" download>My Resume <HiDownload className="opacity-60 group-hover:translate-y-0.5" />
             </a>
 
 
