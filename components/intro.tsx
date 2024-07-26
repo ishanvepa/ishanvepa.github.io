@@ -14,7 +14,7 @@ import Typewriter from 'typewriter-effect';
 
 export default function Intro() {
   return (
-    <section className="mb-28 max-w-[50rem] text-center sm:mb-0"
+    <section className="mb-28 max-w-[50rem] text-center sm:mb-0 min-w-[180px]"
     id = "home">   
         <div className='flex items-center justify-center'>
             <div className="relative">
@@ -76,21 +76,23 @@ export default function Intro() {
         >
 
         
-            <Link href="#contact" className="group bg-green-800 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-green-950 active:scale-105 transition">
+            <Link href="#contact" className="group bg-green-800 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-green-950 active:scale-105 transition ml-auto">
                 Contact Me <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />    
             </Link>
 
-            <a className="group text-black bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-white active:scale-105 transition cursor-pointer border border-black/10" href="/Ishan_Vepa_Resume.pdf" download>My Resume <HiDownload className="opacity-60 group-hover:translate-y-0.5" />
+            <a className="group text-black bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-white active:scale-105 transition cursor-pointer border border-black/10 ml-auto" href="/Ishan_Vepa_Resume.pdf" download>My Resume <HiDownload className="opacity-60 group-hover:translate-y-0.5" />
             </a>
 
+            {/* <div className="flex-row sm:flex-col w-57px"> */}
+                <a className="bg-white text-gray-700 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 hover:bg-white active:scale-105 transition cursor-pointer border border-black/10 ml-auto mr-auto p-5" href="https://linkedin.com/in/ishanvepa" target="_blank">
+                    <BsLinkedin />
+                </a>
 
-            <a className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 hover:bg-white active:scale-105 transition cursor-pointer border border-black/10" href="https://linkedin.com/in/ishanvepa" target="_blank">
-                <BsLinkedin />
-            </a>
+                <a className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full text-[1.35rem] focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 hover:bg-white active:scale-105 transition cursor-pointer border border-black/10 ml-auto mr-auto" href="https://github.com/ishanvepa" target="_blank">
+                    <FaGithubSquare />
+                </a>
+            {/* </div> */}
 
-            <a className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full text-[1.35rem] focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 hover:bg-white active:scale-105 transition cursor-pointer border border-black/10" href="https://github.com/ishanvepa" target="_blank">
-                <FaGithubSquare />
-            </a>
         </motion.div>
 
     </section>
