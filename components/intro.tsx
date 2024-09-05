@@ -54,18 +54,34 @@ export default function Intro() {
 
         </div>
 
-        <motion.div className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
+        <motion.h1 className="mb-1 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
             initial = {{ opacity: 0, y: 100 }}
             animate = {{ opacity: 1, y: 0 }}
         >
-            <Typewriter
+            Hello, I am <span className="font-bold">Ishan Vepa</span>.
+        </motion.h1>
+
+        <motion.div className="mb-10 mt-5 px-4 text-2xl font-light !leading-[1.5] sm:text-2xl"
+            initial = {{ opacity: 0, y: 100 }}
+            animate = {{ opacity: 1, y: 0 }}
+        >
+            {/* <Typewriter
                 onInit={(typewriter) => { 
                     typewriter.typeString('Hello, I am <span style="font-weight:bold;">Ishan Vepa</span>') 
                         .start(); 
                         // .stop();
                     }} 
+            />  */}
+            <Typewriter
+                onInit={(typewriter) => { 
+                    typewriter.typeString('<em>Currently: HCI Research @ <span style="font-weight:bold;"><a href="http://sonify.psych.gatech.edu/" target="_blank">GT Sonification Lab</span></a></em>') 
+                        .start(); 
+                        // .stop();
+                    }} 
             /> 
         </motion.div>
+
+        
 
         <motion.div className="flex flex-col gap-5 sm:flex-row"
             initial = {{ opacity: 0, y: 100 }}
