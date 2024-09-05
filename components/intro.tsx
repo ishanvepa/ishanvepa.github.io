@@ -61,7 +61,7 @@ export default function Intro() {
             Hello, I am <span className="font-bold">Ishan Vepa</span>.
         </motion.h1>
 
-        <motion.div className="mb-10 mt-5 px-4 text-2xl font-light !leading-[1.5] sm:text-2xl"
+        <motion.div className="mb-10 mt-5 px-4 text-xl font-light !leading-[1.5] sm:text-xl"
             initial = {{ opacity: 0, y: 100 }}
             animate = {{ opacity: 1, y: 0 }}
         >
