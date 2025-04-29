@@ -8,7 +8,8 @@ import rmtdevImg from "@/public/rmtdev.png";
 import billboardwebscraper from "@/public/billboard_web_scraper_code.png";
 import MarioGame2 from "../public/mariogame2.png";
 import SleepApp1 from "@/public/sleepapphome1_edit.png";
-import marketMaven from "../public/market_maven_proto.png"
+import marketMaven from "../public/market_maven_proto.png";
+import senserfy from "@/public/senserfy.png";
 
 export const links = [
   {
@@ -78,13 +79,21 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "Market Maven",
+    title: "Senserfy: Spotify Dashboard & AI Recommendations ",
     description:
-      "Analyzes social sentiment of stock through scraping Stocktwits and Twitter, Provides relevant market news on specified stocks related to price fluctuations, Leveraged Bavest Rest API to retrieve and process stock price history and market news",
-    tags: ["React Native", "TypeScript", "Flask", "Python"],
-    imageUrl: marketMaven,
-    projectUrl: "https://github.com/ishanvepa/market-maven",
+      "Built dashboard using Spotify REST API showing 10 listening metrics, such as top artists, genres, and tracks. Developed RAG AI song curation tool that analyzes musical sentiment and recommends songs using FAISS",
+    tags: ["Next.js", "TypeScript", "Flask", "Spotipy", "FAISS", "Python"],
+    imageUrl: senserfy,
+    projectUrl: "https://github.com/ishanvepa/senserfy",
   },
+  // {
+  //   title: "Market Maven",
+  //   description:
+  //     "Analyzes social sentiment of stock through scraping Stocktwits and Twitter, Provides relevant market news on specified stocks related to price fluctuations, Leveraged Bavest Rest API to retrieve and process stock price history and market news",
+  //   tags: ["React Native", "TypeScript", "Flask", "Python"],
+  //   imageUrl: marketMaven,
+  //   projectUrl: "https://github.com/ishanvepa/market-maven",
+  // },
   {
     title: "Personal Website",
     description:
