@@ -6,6 +6,8 @@ import corpcommentImg from "@/public/mywebsite_pic.png";
 import rmtdevImg from "@/public/rmtdev.png";
 
 import billboardwebscraper from "@/public/billboard_web_scraper_code.png";
+import AIAcademicSearchEngine from "@/public/AI_Academic_Search_Engine.png";
+
 import MarioGame2 from "../public/mariogame2.png";
 import SleepApp1 from "@/public/sleepapphome1_edit.png";
 import marketMaven from "../public/market_maven_proto.png";
@@ -78,6 +80,14 @@ export const experiencesData = [
 ] as const;
 
 export const projectsData = [
+  {
+    title: "AI Academic Research Engine",
+    description:
+      "Built an AI academic search engine to perform LLM-based similarity search beyond keyword matching. Engineered a scalable RAG pipeline that ingests papers via the Semantic Scholar API into FAISS vectorstore. Designed REST endpoints for ingestion and similarity queries, enabling vector search for 1,000,000+ abstracts",
+    tags: ["React.js", "Flask", "LangChain FAISS", "Python", "Semantic Scholar API"],
+    imageUrl: AIAcademicSearchEngine,
+    projectUrl: "https://github.com/ishanvepa/AI-Academic-Research-Engine",
+  },
   {
     title: "Senserfy: Spotify Dashboard & AI Recommendations ",
     description:
