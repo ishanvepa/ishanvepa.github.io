@@ -83,8 +83,8 @@ export const projectsData = [
   {
     title: "AI Academic Research Engine",
     description:
-      "Built an AI academic search engine to perform LLM-based similarity search beyond keyword matching. Engineered a scalable RAG pipeline that ingests papers via the Semantic Scholar API into FAISS vectorstore. Designed REST endpoints for ingestion and similarity queries, enabling vector search for 1,000,000+ abstracts",
-    tags: ["React.js", "Flask", "LangChain FAISS", "Python", "Semantic Scholar API"],
+      "Engineered a scalable RAG pipeline that ingests papers via academic journal APIs into FAISS vectorstore. Enabled vector search for 200M+ abstracts, designing 10+ REST endpoints for query processing. Fine-tuned BART model using PEFT to perform literature review through abstractive text summarization",
+    tags: ["Next.js", "React.js", "Flask", "LangChain FAISS", "Python", "BART", "PEFT"],
     imageUrl: AIAcademicSearchEngine,
     projectUrl: "https://github.com/ishanvepa/AI-Academic-Research-Engine",
   },
