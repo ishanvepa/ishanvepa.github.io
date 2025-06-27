@@ -6,6 +6,7 @@ import corpcommentImg from "@/public/mywebsite_pic.png";
 import rmtdevImg from "@/public/rmtdev.png";
 
 import billboardwebscraper from "@/public/billboard_web_scraper_code.png";
+import agenticEmailAssistant from "@/public/agenticEmailAssistant.png";
 import AIAcademicSearchEngine from "@/public/AI_Academic_Search_Engine.png";
 
 import MarioGame2 from "../public/mariogame2.png";
@@ -81,6 +82,14 @@ export const experiencesData = [
 
 export const projectsData = [
   {
+    title: "Agentic AI Email Assistant",
+    description:
+      "Built a multi-agent AI assistant that fetches, summarizes, and takes actions on emails via natural prompts. Integrated LangGraph with ReAct agents to dynamically parse Gmail and schedule Google Calendar events through structured prompting and tool use.",
+    tags: ["LangGraph", "LangChain",  "ReAct Multi-Agentic Architecture", "Gmail API", "Google Calendar API", "Python","Flask", "Next.js"],
+    imageUrl: agenticEmailAssistant,
+    projectUrl: "https://github.com/ishanvepa/agentic-email-assistant",
+  },  
+  {
     title: "AI Academic Research Engine",
     description:
       "Engineered a scalable RAG pipeline that ingests papers via academic journal APIs into FAISS vectorstore. Enabled vector search for 200M+ abstracts, designing 10+ REST endpoints for query processing. Fine-tuned BART model using PEFT to perform literature review through abstractive text summarization",
@@ -88,14 +97,14 @@ export const projectsData = [
     imageUrl: AIAcademicSearchEngine,
     projectUrl: "https://github.com/ishanvepa/AI-Academic-Research-Engine",
   },
-  {
-    title: "Senserfy: Spotify Dashboard & AI Recommendations ",
-    description:
-      "Built dashboard using Spotify REST API showing 10 listening metrics, such as top artists, genres, and tracks. Developed RAG AI song curation tool that analyzes musical sentiment and recommends songs using FAISS",
-    tags: ["Next.js", "TypeScript", "Flask", "Spotipy", "FAISS", "Python"],
-    imageUrl: senserfy,
-    projectUrl: "https://github.com/ishanvepa/senserfy",
-  },
+  // {
+  //   title: "Senserfy: Spotify Dashboard & AI Recommendations ",
+  //   description:
+  //     "Built dashboard using Spotify REST API showing 10 listening metrics, such as top artists, genres, and tracks. Developed RAG AI song curation tool that analyzes musical sentiment and recommends songs using FAISS",
+  //   tags: ["Next.js", "TypeScript", "Flask", "Spotipy", "FAISS", "Python"],
+  //   imageUrl: senserfy,
+  //   projectUrl: "https://github.com/ishanvepa/senserfy",
+  // },
   // {
   //   title: "Market Maven",
   //   description:
@@ -151,6 +160,7 @@ export const skillsData = [
   "Python",
   "Flask",
   "Rest API",
+  "RAG API",
   "HTML",
   "CSS",
   "Javascript",
@@ -166,6 +176,9 @@ export const skillsData = [
   "Tableau",
   "AWS Amplify",
   "Android Studio",
+  "LangChain",
+  "LangGraph",
+  "LLMs"
 
 
 ] as const;
