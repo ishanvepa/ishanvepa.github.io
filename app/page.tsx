@@ -1,24 +1,19 @@
-import About from "@/components/about"
-import Contact from "@/components/contact"
-import Experiences from "@/components/experiences"
-import Intro from "@/components/intro"
-import Projects from "@/components/projects"
-import SectionDivider from "@/components/section-divider"
-import Skills from "@/components/skills"
-import ContactMe from "@/components/contact"
+import Hero from '@/components/Hero'
+import AboutSection from '@/components/about'
+import ProjectsSection from '@/components/projects'
+import SkillsSection from '@/components/skills'
+import { Contact }  from '@/components/contact'
+import { Footer } from '@/components/footer'
 
-export default function Home() {
+export default function HomePage() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24 min-w-[500px]">
-      <Intro />
-      <SectionDivider /> {/*opacity: 0 rn */}
-      <About />
-      <Projects />
-      <Skills />
-      <ContactMe />
-      {/* <Experiences /> */}
-          
-      
-    </main>
+    <div className="min-h-screen">
+      <Hero />
+      <AboutSection />
+      <ProjectsSection />
+      <SkillsSection />
+      <Contact />
+      <Footer />
+    </div>
   )
 }

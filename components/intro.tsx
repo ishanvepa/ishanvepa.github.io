@@ -96,7 +96,7 @@ export default function Intro() {
                 Contact Me <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />    
             </Link>
 
-            <a className="group text-black bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-white active:scale-105 transition cursor-pointer border border-black/10 ml-auto mr-auto" href="/Ishan_Vepa_Resume.pdf" download>My Resume <HiDownload className="opacity-60 group-hover:translate-y-0.5" />
+            <a className="group text-black bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-white active:scale-105 transition cursor-pointer border border-black/10 ml-auto mr-auto" href="public/Ishan_Vepa_Resume.pdf" download>My Resume <HiDownload className="opacity-60 group-hover:translate-y-0.5" />
             </a>
 
             {/* <div className="flex-row sm:flex-col w-57px"> */}
