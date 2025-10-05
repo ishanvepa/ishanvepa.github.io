@@ -78,7 +78,7 @@ export default function SimpleCentered() {
               </a>
             </div> */}
             
-            <div className="flex items-center gap-x-8">
+            <div className="flex items-center gap-x-8 justify-center">
               {navigation.map((item) => (
                 <a 
                   key={item.name} 
@@ -105,10 +105,14 @@ export default function SimpleCentered() {
           <div className="lg:hidden backdrop-blur-md bg-white/5 border border-white/10 rounded-full px-6 py-3 shadow-lg">
             <div className="flex items-center justify-between">
               <a href="#" className="-m-1.5 p-1.5">
-                <span className="sr-only">Alex Chen</span>
-                <div className="h-8 w-8 bg-emerald-500 rounded-lg flex items-center justify-center">
-                  <span className="text-black font-bold text-sm">AC</span>
-                </div>
+                <span className="sr-only">Ishan Vepa</span>
+                <Image
+                  src="/largeishan_favicon(1).png"
+                  alt="Ishan Vepa"
+                  width={32}
+                  height={32}
+                  className="rounded-lg object-cover"
+                />
               </a>
               <button
                 type="button"
@@ -127,10 +131,14 @@ export default function SimpleCentered() {
           <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto backdrop-blur-xl bg-black/90 border-l border-white/10 p-6 sm:max-w-sm">
             <div className="flex items-center justify-between">
               <a href="#" className="-m-1.5 p-1.5">
-                <span className="sr-only">Alex Chen</span>
-                <div className="h-8 w-8 bg-emerald-500 rounded-lg flex items-center justify-center">
-                  <span className="text-black font-bold text-sm">AC</span>
-                </div>
+                <span className="sr-only">Ishan Vepa</span>
+                <Image
+                  src="/largeishan_favicon(1).png"
+                  alt="Ishan Vepa"
+                  width={32}
+                  height={32}
+                  className="rounded-lg object-cover"
+                />
               </a>
               <button
                 type="button"
@@ -284,7 +292,7 @@ export default function SimpleCentered() {
 
           <div className="text-center">
             <motion.h1 
-              className="text-5xl font-bold tracking-tight text-balance text-white sm:text-7xl font-[var(--font-display)]"
+              className="text-5xl tracking-tight text-balance text-white sm:text-7xl font-[var(--font-display)]"
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.3 }}
@@ -319,7 +327,11 @@ export default function SimpleCentered() {
               >
                 View My Work
               </a>
-              <a href="#" className="text-sm/6 font-semibold text-white hover:text-emerald-400 transition-colors">
+              <a
+                href="/Ishan_Vepa_Resume.pdf"
+                download="ishan_vepa_resume.pdf"
+                className="text-sm/6 font-semibold text-white hover:text-emerald-400 transition-colors"
+              >
                 Download Resume <span aria-hidden="true">→</span>
               </a>
               <a

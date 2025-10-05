@@ -17,21 +17,21 @@ export function Contact() {
           </div>
 
           <div className="py-10 space-y-6">
+            <p> Feel free to reach out to me via
             <Link 
               href="mailto:alex.chen@email.com"
-              className="block text-2xl text-[#10B981] hover:text-[#059669] transition-colors duration-200 font-medium"
-            >
-              alex.chen@email.com
-            </Link>
-            
+              className="text-[#10B981] hover:text-[#059669] transition-colors duration-200 font-medium"
+            > email 
+             </Link> 
+             or 
             <Link 
-              href="https://linkedin.com/in/alexchen"
-              className="inline-flex items-center gap-2 text-[#10B981] hover:text-[#059669] transition-colors duration-200 font-medium"
-            >
-              <Linkedin className="h-5 w-5" />
-              LinkedIn Profile
+              href="https://linkedin.com/in/ishanvepa"
+              className="text-[#10B981] hover:text-[#059669] transition-colors duration-200 font-medium"
+            > linkedin.
             </Link>
+            </p>       
           </div>
+          
         </div>
       </div>
     </div>
