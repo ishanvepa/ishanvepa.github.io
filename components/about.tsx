@@ -2,10 +2,11 @@
 
 import { useEffect, useRef, useState } from "react"
 import { motion, useInView } from "framer-motion"
+import Link from 'next/link'
 
 export default function AboutSection() {
   const ref = useRef(null)
-  const isInView = useInView(ref, { once: true, threshold: 0.2 })
+  const isInView = useInView(ref, { once: true, amount: 0.2 })
 
   return (
     <section 
@@ -91,22 +92,31 @@ export default function AboutSection() {
             transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
           >
             <div className="space-y-6">
-              <h2 className="text-4xl lg:text-5xl font-bold font-[var(--font-display)] tracking-tight bg-gradient-to-r from-white via-emerald-200 to-emerald-400 bg-clip-text text-transparent">
+              <h2 className="text-4xl lg:text-5xl font-[var(--font-display)] tracking-tight bg-gradient-to-r from-white via-orange-200 to-orange-400 bg-clip-text text-transparent">
                 About Me
               </h2>
               
               <div className="space-y-6 text-lg leading-relaxed font-[var(--font-body)]">
                 <motion.p 
-                  className="text-muted-foreground"
+                  className="text-text-secondary"
                   initial={{ opacity: 0, y: 20 }}
                   animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
                   transition={{ duration: 0.6, delay: 0.4 }}
                 >
-                  I have an avid interest in technology and computer science. I am currently pursuing a Bachelor of Science in Computer Science at the Georgia Institute of Technology with a concentration in Human-Computer Interaction.
+                  I have an avid interest in technology and computer science. I am currently pursuing a Bachelor of Science in Computer Science at the{' '}
+                  <Link
+                    href="https://gatech.edu"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-orange-500 hover:text-orange-400 font-semibold"
+                  >
+                    Georgia Institute of Technology
+                  </Link>
+                  {' '}with a concentration in Human-Computer Interaction.
                 </motion.p>
 
                 <motion.p 
-                  className="text-muted-foreground"
+                  className="text-text-secondary"
                   initial={{ opacity: 0, y: 20 }}
                   animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
                   transition={{ duration: 0.6, delay: 0.5 }}
@@ -138,7 +148,7 @@ export default function AboutSection() {
                   animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
                   transition={{ duration: 0.4, delay: 0.7 + index * 0.1 }}
                 >
-                  <span className="relative z-10 bg-gradient-to-r from-white to-emerald-200 bg-clip-text text-transparent group-hover:from-emerald-400 group-hover:to-cyan-400 transition-all duration-300">
+                  <span className="relative z-10 bg-gradient-to-r from-white to-orange-200 bg-clip-text text-transparent group-hover:from-orange-400 group-hover:to-cyan-400 transition-all duration-300">
                     {item.skill}
                   </span>
                   <div className={`absolute inset-0 bg-gradient-to-r ${item.gradient} opacity-0 group-hover:opacity-20 transition-opacity duration-300 rounded-lg`} />

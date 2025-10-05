@@ -28,7 +28,7 @@ const projects = [
     sourceLink: "https://github.com/ishanvepa/agentic-email-assistant",
     
     category: "Agentic Systems",
-    gradient: "from-emerald-600 via-teal-500 to-cyan-500",
+  gradient: "from-orange-600 via-red-500 to-pink-500",
   },
   {
     id: 2,
@@ -49,7 +49,7 @@ const projects = [
     sourceLink: "https://github.com/ishanvepa/AI-Academic-Research-Engine",
     
     category: "NLP / Retrieval",
-    gradient: "from-violet-600 via-purple-600 to-fuchsia-600",
+    gradient: "from-orange-600 via-red-500 to-pink-500",
   },
   {
     id: 3,
@@ -62,7 +62,7 @@ const projects = [
     sourceLink: "https://github.com/ishanvepa/ishanvepa.github.io",
     
     category: "Web",
-    gradient: "from-blue-600 via-indigo-500 to-violet-500",
+    gradient: "from-orange-600 via-red-500 to-pink-500",
   },
   {
     id: 4,
@@ -88,7 +88,7 @@ const projects = [
     sourceLink: "https://github.com/ishanvepa/pop-music-comparative-analyzer",
     
     category: "Research",
-    gradient: "from-emerald-600 via-lime-500 to-yellow-400",
+  gradient: "from-orange-600 via-red-500 to-pink-500",
   },
 ]
 
@@ -135,7 +135,7 @@ export default function ProjectsSection() {
           transition={{ duration: 0.6 }}
           className="mb-16 text-center"
         >
-          <h2 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl bg-gradient-to-r from-white via-emerald-200 to-emerald-400 bg-clip-text text-transparent">
+          <h2 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl bg-gradient-to-r from-white via-orange-200 to-orange-400 bg-clip-text text-transparent">
             Featured Projects
           </h2>
         </motion.div>
@@ -221,7 +221,7 @@ export default function ProjectsSection() {
                         <Badge
                           key={tech}
                           variant="default"
-                          className="bg-muted/50 text-muted-foreground hover:bg-gradient-to-r hover:from-primary/20 hover:to-accent/20 hover:text-white text-xs font-medium border border-border/50 hover:border-primary/30 transition-all duration-300 hover:scale-105"
+                          className="bg-muted/50 text-muted-foreground hover:bg-gradient-to-r hover:from-primary/20 hover:to-accent/20 hover:text-white text-xs font-medium border border-border/50  transition-all duration-300 hover:scale-105"
                         >
                           {tech}
                         </Badge>

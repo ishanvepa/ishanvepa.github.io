@@ -19,19 +19,19 @@ export function Contact() {
           <div className="py-10 space-y-6">
             <p> Feel free to reach out to me via
             <Link 
-              href="mailto:alex.chen@email.com"
-              className="text-[#10B981] hover:text-[#059669] transition-colors duration-200 font-medium"
+              href="mailto:ishanvepa171@gmail.com"
+              className="text-[#f97316] hover:text-[#fb923c] transition-colors duration-200 font-medium"
             > email 
              </Link> 
              or 
             <Link 
               href="https://linkedin.com/in/ishanvepa"
-              className="text-[#10B981] hover:text-[#059669] transition-colors duration-200 font-medium"
+              className="text-[#f97316] hover:text-[#fb923c] transition-colors duration-200 font-medium"
             > linkedin.
             </Link>
             </p>       
           </div>
-          
+
         </div>
       </div>
     </div>

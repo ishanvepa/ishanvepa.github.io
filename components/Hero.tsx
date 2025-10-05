@@ -22,7 +22,7 @@ export default function SimpleCentered() {
       {/* Animated background elements */}
       <div className="absolute inset-0 -z-10">
         <motion.div
-          className="absolute top-1/4 left-1/4 w-64 h-64 bg-emerald-500/5 rounded-full blur-3xl"
+          className="absolute top-1/4 left-1/4 w-64 h-64 bg-orange-500/5 rounded-full blur-3xl"
           animate={{
             x: [0, 50, -50, 0],
             y: [0, -30, 30, 0],
@@ -34,7 +34,7 @@ export default function SimpleCentered() {
           }}
         />
         <motion.div
-          className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-emerald-400/3 rounded-full blur-3xl"
+          className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-orange-400/3 rounded-full blur-3xl"
           animate={{
             x: [0, -40, 40, 0],
             y: [0, 40, -40, 0],
@@ -72,7 +72,7 @@ export default function SimpleCentered() {
             {/* <div className="flex items-center">
               <a href="#" className="-m-1.5 p-1.5">
                 <span className="sr-only">Ishan Vepa</span>
-                <div className="h-8 w-8 bg-emerald-500 rounded-lg flex items-center justify-center">
+                <div className="h-8 w-8 bg-orange-500 rounded-lg flex items-center justify-center">
                   <span className="text-black font-bold text-sm">IV</span>
                 </div>
               </a>
@@ -83,10 +83,10 @@ export default function SimpleCentered() {
                 <a 
                   key={item.name} 
                   href={item.href} 
-                  className="text-sm font-semibold text-white/90 hover:text-emerald-400 transition-colors duration-200 relative group"
+                  className="text-sm font-semibold text-white/90 hover:text-orange-400 transition-colors duration-200 relative group"
                 >
                   {item.name}
-                  <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-emerald-400 group-hover:w-full transition-all duration-200"></span>
+                  <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-orange-400 group-hover:w-full transition-all duration-200"></span>
                 </a>
               ))}
             </div>
@@ -94,7 +94,7 @@ export default function SimpleCentered() {
             {/* <div className="flex items-center">
               <a 
                 href="#" 
-                className="text-sm font-semibold text-white/90 hover:text-emerald-400 transition-colors duration-200 px-4 py-2 rounded-full border border-emerald-500/20 hover:border-emerald-500/40 hover:bg-emerald-500/5"
+                className="text-sm font-semibold text-white/90 hover:text-orange-400 transition-colors duration-200 px-4 py-2 rounded-full border border-orange-500/20 hover:border-orange-500/40 hover:bg-orange-500/5"
               >
                 Contact <span aria-hidden="true">&rarr;</span>
               </a>
@@ -156,20 +156,20 @@ export default function SimpleCentered() {
                     <a
                       key={item.name}
                       href={item.href}
-                      className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5 hover:text-emerald-400 transition-colors duration-200"
+                      className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5 hover:text-orange-400 transition-colors duration-200"
                     >
                       {item.name}
                     </a>
                   ))}
                 </div>
-                <div className="py-6">
+                {/* <div className="py-6">
                   <a
                     href="#"
-                    className="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-white hover:bg-white/5 hover:text-emerald-400 transition-colors duration-200"
+                    className="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-white hover:bg-white/5 hover:text-orange-400 transition-colors duration-200"
                   >
                     Contact
                   </a>
-                </div>
+                </div> */}
               </div>
             </div>
           </DialogPanel>
@@ -180,15 +180,17 @@ export default function SimpleCentered() {
         <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
           <div className="hidden sm:mb-8 sm:flex sm:justify-center">
             <motion.div 
-              className="relative rounded-full px-3 py-1 text-sm/6 text-gray-400 ring-1 ring-gray-800 hover:ring-emerald-600 transition-colors"
+              className="relative rounded-full px-3 py-1 text-sm/6 text-zinc-400 ring-1 ring-zinc-800 hover:ring-orange-500/30 transition-all duration-200 hover:bg-zinc-950"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
             >
-              Available for new opportunities.{' '}
-              <a href="#" className="font-semibold text-emerald-500 hover:text-emerald-400 transition-colors">
-                <span aria-hidden="true" className="absolute inset-0" />
-                Get in touch <span aria-hidden="true">&rarr;</span>
+              Want to connect?{' '}
+              <a href="#" className="font-semibold text-orange-500 hover:text-orange-400 transition-all">
+                <span aria-hidden="true" className="absolute inset-0 transition-all" />
+                Get in touch <span aria-hidden="true">&rarr;
+
+                </span>
               </a>
             </motion.div>
           </div>
@@ -203,7 +205,7 @@ export default function SimpleCentered() {
             <div className="relative group">
               {/* Animated gradient glow */}
               <motion.div
-                className="absolute -inset-2 bg-gradient-to-r from-emerald-600 via-emerald-500 to-teal-500 rounded-full blur-lg opacity-20 group-hover:opacity-40 transition-all duration-500"
+                className="absolute -inset-2 bg-gradient-to-r from-orange-600 via-orange-500 to-amber-300 rounded-full blur-lg opacity-20 group-hover:opacity-40 transition-all duration-500"
                 animate={{
                   scale: [1, 1.05, 1],
                   rotate: [0, 180, 360],
@@ -217,7 +219,7 @@ export default function SimpleCentered() {
               
               {/* Profile image container */}
               <motion.div
-                className="relative w-32 h-32 sm:w-40 sm:h-40 rounded-full overflow-hidden border-4 border-emerald-500/30 bg-gradient-to-br from-emerald-500/10 to-teal-500/10 backdrop-blur-sm"
+                className="relative w-32 h-32 sm:w-40 sm:h-40 rounded-full overflow-hidden border-4 border-orange-500/30 bg-gradient-to-br from-orange-500/10 to-purple-500/10 backdrop-blur-sm"
                 whileHover={{ 
                   scale: 1.05,
                   rotate: 3,
@@ -226,7 +228,7 @@ export default function SimpleCentered() {
               >
                 <Image
                   src="/profpic.jpeg"
-                  alt="Alex Chen - Full-Stack Software Engineer"
+                  alt="Ishan Vepa - CS @ Georgia Tech"
                   fill
                   className="object-cover group-hover:scale-110 transition-transform duration-500"
                   priority
@@ -242,7 +244,7 @@ export default function SimpleCentered() {
                   {[...Array(6)].map((_, i) => (
                     <motion.div
                       key={i}
-                      className="absolute w-1 h-1 bg-emerald-400 rounded-full"
+                      className="absolute w-1 h-1 bg-orange-400 rounded-full"
                       style={{
                         left: `${20 + i * 10}%`,
                         top: `${30 + i * 5}%`,
@@ -265,7 +267,7 @@ export default function SimpleCentered() {
 
               {/* Status indicator */}
               {/* <motion.div
-                className="absolute bottom-2 right-2 w-6 h-6 bg-emerald-500 rounded-full border-3 border-black flex items-center justify-center"
+                className="absolute bottom-2 right-2 w-6 h-6 bg-orange-500 rounded-full border-3 border-black flex items-center justify-center"
                 animate={{
                   scale: [1, 1.2, 1],
                 }}
@@ -300,7 +302,7 @@ export default function SimpleCentered() {
               Ishan Vepa
             </motion.h1>
             <motion.p 
-              className="mt-4 text-2xl font-medium text-emerald-500 sm:text-3xl"
+              className="mt-4 text-2xl font-medium text-orange-500 sm:text-3xl"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
@@ -323,14 +325,14 @@ export default function SimpleCentered() {
             >
               <a
                 href="#"
-                className="rounded-md bg-emerald-500 px-3.5 py-2.5 text-sm font-semibold text-black shadow-xs hover:bg-emerald-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-500 transition-colors"
+                className="rounded-md bg-orange-500 px-3.5 py-2.5 text-sm font-semibold text-black shadow-xs hover:bg-orange-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-500 transition-colors"
               >
                 View My Work
               </a>
               <a
                 href="/Ishan_Vepa_Resume.pdf"
                 download="ishan_vepa_resume.pdf"
-                className="text-sm/6 font-semibold text-white hover:text-emerald-400 transition-colors"
+                className="text-sm/6 font-semibold text-white hover:text-orange-400 transition-colors"
               >
                 Download Resume <span aria-hidden="true">→</span>
               </a>
@@ -338,7 +340,7 @@ export default function SimpleCentered() {
                 href="https://linkedin.com/in/ishanvepa"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-white hover:text-emerald-400 transition-colors"
+                className="text-white hover:text-orange-400 transition-colors"
               >
                 <Linkedin size={24} />
               </a>
@@ -346,7 +348,7 @@ export default function SimpleCentered() {
                 href="https://github.com/ishanvepa"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-white hover:text-emerald-400 transition-colors"
+                className="text-white hover:text-orange-400 transition-colors"
               >
                 <Github size={24} />
               </a>

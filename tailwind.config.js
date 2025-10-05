@@ -19,7 +19,7 @@ module.exports = {
       foreground: '#ffffff', 
       'text-secondary': '#bbbbbb',
       border: '#333333',
-      primary: '#10b981', // emerald-500 as example 
+  primary: '#f97316', // orange-500 as example
       accent: '#6366f1',  // indigo-500 as example 
       muted: '#1f2937'    // slate-800 as example 
     }

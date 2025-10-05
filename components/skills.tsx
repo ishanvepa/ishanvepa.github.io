@@ -53,11 +53,11 @@ const skillCategories = [
     skills: [
       { name: "ASP.NET Framework", icon: Server, gradient: "from-purple-500 to-indigo-600" },
       { name: "Flask", icon: Package, gradient: "from-gray-400 to-gray-600" },
-      { name: "Rest API", icon: Zap, gradient: "from-green-400 to-emerald-600" },
+  { name: "Rest API", icon: Zap, gradient: "from-green-400 to-orange-600" },
       { name: "RAG API", icon: Brain, gradient: "from-violet-400 to-purple-600" },
       { name: "AWS API", icon: Cloud, gradient: "from-orange-400 to-orange-600" },
     ],
-    bgGradient: "from-green-500/10 to-emerald-500/10"
+  bgGradient: "from-green-500/10 to-orange-500/10"
   },
   {
     title: "Development Tools",
@@ -139,7 +139,7 @@ export default function SkillsSection() {
         >
           <motion.h2 
             variants={itemVariants}
-            className="text-4xl lg:text-5xl font-bold mb-4 bg-gradient-to-r from-white via-emerald-200 to-emerald-400 bg-clip-text text-transparent"
+            className="text-4xl lg:text-5xl font-bold mb-4 bg-gradient-to-r from-white via-orange-200 to-orange-400 bg-clip-text text-transparent"
           >
             Skills & Technologies
           </motion.h2>

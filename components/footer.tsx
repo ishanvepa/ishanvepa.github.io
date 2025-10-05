@@ -48,7 +48,7 @@ export function Footer() {
         </div>
         <div className="flex sm:flex-row flex-col justify-between mt-8 items-center w-full">
           <p className="text-text-secondary mb-8 sm:mb-0 text-xs">
-            © 2024 Alex Chen. All rights reserved.
+            Ishan Vepa
           </p>
           <div className="flex gap-4">
             <Link href="#" className="transition-colors hover:text-accent">
@@ -108,7 +108,7 @@ const Logo = () => {
       href="/"
       className="font-normal flex space-x-2 items-center text-sm mr-4 text-white px-2 py-1 relative z-20"
     >
-      <span className="font-medium text-white font-[var(--font-display)] text-lg">Alex Chen</span>
+      <span className="font-medium text-white font-[var(--font-display)] text-lg">Ishan Vepa</span>
     </Link>
   );
 };
