@@ -125,7 +125,7 @@ const skillVariants = {
 
 export default function SkillsSection() {
   return (
-    <section className="bg-card py-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
+    <section id="skills" className="bg-card py-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
       {/* Background gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-bl from-accent/5 via-transparent to-primary/5 pointer-events-none" />
       
@@ -139,7 +139,7 @@ export default function SkillsSection() {
         >
           <motion.h2 
             variants={itemVariants}
-            className="text-4xl lg:text-5xl font-bold mb-4 bg-gradient-to-r from-white via-orange-200 to-orange-400 bg-clip-text text-transparent"
+            className="text-3xl tracking-tight text-foreground sm:text-3xl bg-gradient-to-r from-white via-orange-200 to-orange-400 bg-clip-text text-transparent"
           >
             Skills & Technologies
           </motion.h2>

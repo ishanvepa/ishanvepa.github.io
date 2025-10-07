@@ -27,11 +27,11 @@ export function Footer() {
     <div className="border-border px-8 py-20 bg-black w-full relative overflow-hidden bg-gradient-to-bl from-accent/5 via-transparent to-primary/5 ">
       <div className="max-w-7xl mx-auto text-sm text-text-secondary justify-between items-start md:px-8">
         <div className="flex flex-col items-center justify-center w-full relative">
-          <div className="mr-0 md:mr-4 md:flex mb-4">
+          {/* <div className="mr-0 md:mr-4 md:flex mb-4">
             <Logo />
-          </div>
+          </div> */}
 
-          <ul className="transition-colors flex sm:flex-row flex-col hover:text-white text-text-secondary list-none gap-4">
+          {/* <ul className="transition-colors flex sm:flex-row flex-col hover:text-white text-text-secondary list-none gap-4">
             {pages.map((page, idx) => (
               <li key={"pages" + idx} className="list-none">
                 <Link
@@ -42,24 +42,24 @@ export function Footer() {
                 </Link>
               </li>
             ))}
-          </ul>
+          </ul> */}
 
           <GridLineHorizontal className="max-w-7xl mx-auto mt-8" />
         </div>
         <div className="flex sm:flex-row flex-col justify-between mt-8 items-center w-full">
-          <p className="text-text-secondary mb-8 sm:mb-0 text-xs">
+          <p className="text-text-secondary mb-8 sm:mb-0 text-s">
             Ishan Vepa
           </p>
           <div className="flex gap-4">
-            <Link href="#" className="transition-colors hover:text-accent">
-              <Github className="h-6 w-6 text-accent" />
+            <Link href="https://github.com/ishanvepa">
+              <Github className="h-6 w-6 text-orange-500/70 hover:text-orange-500/100 transition-colors duration-200" />
             </Link>
-            <Link href="#" className="transition-colors hover:text-accent">
-              <Linkedin className="h-6 w-6 text-accent" />
+            <Link href="https://linkedin.com/in/ishanvepa">
+              <Linkedin className="h-6 w-6 text-orange-500/70 hover:text-orange-500/100 transition-colors duration-200" />
             </Link>
-            <Link href="#" className="transition-colors hover:text-accent">
+            {/* <Link href="#" className="transition-colors hover:text-accent">
               <Mail className="h-6 w-6 text-accent" />
-            </Link>
+            </Link> */}
           </div>
         </div>
       </div>
@@ -104,11 +104,11 @@ const GridLineHorizontal = ({
 
 const Logo = () => {
   return (
-    <Link
-      href="/"
-      className="font-normal flex space-x-2 items-center text-sm mr-4 text-white px-2 py-1 relative z-20"
+    <img
+      src="largeishan_favicon(1).png"
+      className="font-normal flex space-x-2 items-center text-sm mr-4 text-white px-2 py-1 relative z-20 w-16"
     >
-      <span className="font-medium text-white font-[var(--font-display)] text-lg">Ishan Vepa</span>
-    </Link>
+      {/* <span className="font-medium text-white font-[var(--font-display)] text-lg">Ishan Vepa</span> */}
+    </img>
   );
 };

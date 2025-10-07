@@ -83,10 +83,10 @@ export default function SimpleCentered() {
                 <a 
                   key={item.name} 
                   href={item.href} 
-                  className="text-sm font-semibold text-white/90 hover:text-orange-400 transition-colors duration-200 relative group"
+                  className="text-sm font-semibold text-white/90 hover:text-orange-300 transition-colors duration-200 relative group"
                 >
                   {item.name}
-                  <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-orange-400 group-hover:w-full transition-all duration-200"></span>
+                  {/* <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-orange-400 group-hover:w-full transition-all duration-200"></span> */}
                 </a>
               ))}
             </div>
@@ -324,7 +324,7 @@ export default function SimpleCentered() {
               transition={{ duration: 0.8, delay: 0.6 }}
             >
               <a
-                href="#"
+                href="#projects"
                 className="rounded-md bg-orange-500 px-3.5 py-2.5 text-sm font-semibold text-black shadow-xs hover:bg-orange-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-500 transition-colors"
               >
                 View My Work

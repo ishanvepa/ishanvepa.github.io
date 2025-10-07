@@ -92,7 +92,7 @@ export default function AboutSection() {
             transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
           >
             <div className="space-y-6">
-              <h2 className="text-4xl lg:text-5xl font-[var(--font-display)] tracking-tight bg-gradient-to-r from-white via-orange-200 to-orange-400 bg-clip-text text-transparent">
+              <h2 className="text-3xl tracking-tight text-foreground sm:text-3xl bg-gradient-to-r from-white via-orange-200 to-orange-400 bg-clip-text text-transparent">
                 About Me
               </h2>
               

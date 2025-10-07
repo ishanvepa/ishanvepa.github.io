@@ -56,7 +56,7 @@ const projects = [
     title: "Personal Website",
     description:
       "Leveraged Next.js and Tailwind CSS, and HTML to build a high-performance personal website.",
-    image: "/mywebsite_pic.png",
+    image: "/bg_personal_website.png",
     techStack: ["React", "Next.js", "TypeScript", "TailwindCSS", "HTML"],
     demoLink: "#",
     sourceLink: "https://github.com/ishanvepa/ishanvepa.github.io",
@@ -122,7 +122,7 @@ const cardVariants = {
 
 export default function ProjectsSection() {
   return (
-    <section className="bg-card py-24 relative overflow-hidden">
+    <section id="projects" className="bg-card py-24 relative overflow-hidden">
       {/* Background gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-accent/5 pointer-events-none" />
       
@@ -135,7 +135,7 @@ export default function ProjectsSection() {
           transition={{ duration: 0.6 }}
           className="mb-16 text-center"
         >
-          <h2 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl bg-gradient-to-r from-white via-orange-200 to-orange-400 bg-clip-text text-transparent">
+          <h2 className="text-3xl tracking-tight text-foreground sm:text-3xl bg-gradient-to-r from-white via-orange-200 to-orange-400 bg-clip-text text-transparent">
             Featured Projects
           </h2>
         </motion.div>
@@ -159,20 +159,21 @@ export default function ProjectsSection() {
               }}
               className="group"
             >
-              <Card className="bg-card/50 backdrop-blur-sm border-border/50 overflow-hidden transition-all duration-500 hover:shadow-2xl hover:shadow-primary/20 hover:border-primary/30 relative">
+              <Card className="bg-card/50 backdrop-blur-sm border-border/50 overflow-hidden transition-all duration-500 hover:shadow-2xl hover:shadow-primary/20 relative">
                 {/* Animated gradient border on hover */}
-                <div className="absolute inset-0 bg-gradient-to-r from-primary/20 via-accent/20 to-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-lg blur-sm" />
+                <div className="absolute inset-0 bg-zinc-950 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-lg blur-sm" />
                 
                 <CardContent className="p-0 relative">
                   {/* Project Image with gradient overlay */}
                   <div className="relative overflow-hidden aspect-video">
-                    <div className={`aspect-video bg-gradient-to-br ${project.gradient} flex items-center justify-center relative group-hover:scale-105 transition-transform duration-500`}>
+                    <div className={`aspect-video
+                       bg-gradient-to-br ${project.gradient} flex items-center justify-center relative group-hover:scale-105 transition-transform duration-500`}>
                       <div className="absolute inset-0">
                         <Image
                           src={project.image}
                           alt={project.title}
                           fill
-                          className="object-cover"
+                          className="object-cover object-top"
                         />
                       </div>
                       {/* Animated particles on hover */}
