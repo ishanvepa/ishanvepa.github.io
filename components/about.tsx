@@ -15,7 +15,7 @@ export default function AboutSection() {
       id="about"
     >
       {/* Background gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-bl from-accent/5 via-transparent to-primary/5 pointer-events-none" />
+      {/* <div className="absolute inset-0 bg-gradient-to-bl from-accent/5 via-transparent to-primary/5 pointer-events-none" /> */}
       
       <div className="max-w-6xl mx-auto relative">
         <div className="flex flex-col items-center text-center max-w-3xl mx-auto">

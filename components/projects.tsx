@@ -124,7 +124,8 @@ export default function ProjectsSection() {
   return (
     <section id="projects" className="bg-card py-24 relative overflow-hidden">
       {/* Background gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-accent/5 pointer-events-none" />
+      {/* <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-accent/5 pointer-events-none" /> */}
+      
       
       <div className="mx-auto max-w-6xl px-6 lg:px-8 relative">
         {/* Section Header */}

@@ -20,7 +20,7 @@ module.exports = {
       'text-secondary': '#bbbbbb',
       border: '#333333',
   primary: '#f97316', // orange-500 as example
-      accent: '#6366f1',  // indigo-500 as example 
+      accent: '#ef4444',  // indigo-500 as example 
       muted: '#1f2937'    // slate-800 as example 
     }
     },

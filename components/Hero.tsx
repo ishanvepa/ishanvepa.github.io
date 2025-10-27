@@ -17,8 +17,8 @@ export default function SimpleCentered() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
-    <div className="bg-black bg-gradient-to-br from-primary/5 via-transparent to-accent/5 min-h-screen relative overflow-hidden">
-      
+    // <div className="bg-black bg-gradient-to-br from-primary/5 via-transparent to-accent/5 min-h-screen relative overflow-hidden">
+    <div className="bg-black min-h-screen relative overflow-hidden">      
       {/* Animated background elements */}
       <div className="absolute inset-0 -z-10">
         <motion.div
