@@ -28,7 +28,7 @@ const projects = [
     sourceLink: "https://github.com/ishanvepa/agentic-email-assistant",
     
     category: "Agentic Systems",
-  gradient: "from-orange-600 via-red-500 to-pink-500",
+  gradient: "from-orange-600 to-amber-500",
   },
   {
     id: 2,
@@ -49,7 +49,7 @@ const projects = [
     sourceLink: "https://github.com/ishanvepa/AI-Academic-Research-Engine",
     
     category: "NLP / Retrieval",
-    gradient: "from-orange-600 via-red-500 to-pink-500",
+    gradient: "from-orange-600 to-amber-500",
   },
   {
     id: 3,
@@ -62,7 +62,7 @@ const projects = [
     sourceLink: "https://github.com/ishanvepa/ishanvepa.github.io",
     
     category: "Web",
-    gradient: "from-orange-600 via-red-500 to-pink-500",
+    gradient: "from-orange-600 to-amber-500",
   },
   {
     id: 4,
@@ -75,7 +75,7 @@ const projects = [
     sourceLink: "https://github.com/ishanvepa/CS2340C_Team35",
     
     category: "Mobile Game",
-    gradient: "from-orange-600 via-red-500 to-pink-500",
+    gradient: "from-orange-600 to-amber-500",
   },
   {
     id: 5,
@@ -88,7 +88,7 @@ const projects = [
     sourceLink: "https://github.com/ishanvepa/pop-music-comparative-analyzer",
     
     category: "Research",
-  gradient: "from-orange-600 via-red-500 to-pink-500",
+  gradient: "from-orange-600 to-amber-500",
   },
 ]
 

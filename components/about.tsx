@@ -108,7 +108,7 @@ export default function AboutSection() {
                     href="https://gatech.edu"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-orange-500 hover:text-orange-400 font-semibold"
+                    className="text-amber-500 hover:text-amber-500/80 font-semibold transition-all"
                   >
                     Georgia Institute of Technology
                   </Link>

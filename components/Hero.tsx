@@ -177,7 +177,7 @@ export default function SimpleCentered() {
       </header>
 
       <div className="relative isolate px-6 lg:px-8">
-        <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
+        <div className="mx-auto max-w-4xl py-32 sm:py-48 lg:py-56">
           <div className="hidden sm:mb-8 sm:flex sm:justify-center">
             <motion.div 
               className="relative rounded-full px-3 py-1 text-sm/6 text-zinc-400 ring-1 ring-zinc-800 hover:ring-orange-500/30 transition-all duration-200 hover:bg-zinc-950"
@@ -186,7 +186,7 @@ export default function SimpleCentered() {
               transition={{ duration: 0.8, delay: 0.2 }}
             >
               Want to connect?{' '}
-              <a href="#" className="font-semibold text-orange-500 hover:text-orange-400 transition-all">
+              <a href="#contact" className="font-semibold text-orange-400 hover:text-orange-400 transition-all">
                 <span aria-hidden="true" className="absolute inset-0 transition-all" />
                 Get in touch <span aria-hidden="true">&rarr;
 
@@ -195,163 +195,107 @@ export default function SimpleCentered() {
             </motion.div>
           </div>
 
-          {/* Profile Picture Section */}
-          <motion.div 
-            className="flex justify-center mb-8"
-            initial={{ opacity: 0, scale: 0.8, y: 30 }}
-            animate={{ opacity: 1, scale: 1, y: 0 }}
-            transition={{ duration: 1, delay: 0.1 }}
-          >
-            <div className="relative group">
-              {/* Animated gradient glow */}
-              <motion.div
-                className="absolute -inset-2 bg-gradient-to-r from-orange-600 via-orange-500 to-amber-300 rounded-full blur-lg opacity-20 group-hover:opacity-40 transition-all duration-500"
-                animate={{
-                  scale: [1, 1.05, 1],
-                  rotate: [0, 180, 360],
-                }}
-                transition={{
-                  duration: 8,
-                  repeat: Infinity,
-                  ease: "easeInOut"
-                }}
-              />
-              
-              {/* Profile image container */}
-              <motion.div
-                className="relative w-32 h-32 sm:w-40 sm:h-40 rounded-full overflow-hidden border-4 border-orange-500/30 bg-gradient-to-br from-orange-500/10 to-purple-500/10 backdrop-blur-sm"
-                whileHover={{ 
-                  scale: 1.05,
-                  rotate: 3,
-                  transition: { duration: 0.3 }
-                }}
-              >
-                <Image
-                  src="/profpic.jpeg"
-                  alt="Ishan Vepa - CS @ Georgia Tech"
-                  fill
-                  className="object-cover group-hover:scale-110 transition-transform duration-500"
-                  priority
-                />
-                
-                {/* Floating particles */}
-                {/* <motion.div
-                  className="absolute inset-0 pointer-events-none"
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  transition={{ delay: 2 }}
-                >
-                  {[...Array(6)].map((_, i) => (
-                    <motion.div
-                      key={i}
-                      className="absolute w-1 h-1 bg-orange-400 rounded-full"
-                      style={{
-                        left: `${20 + i * 10}%`,
-                        top: `${30 + i * 5}%`,
-                      }}
-                      animate={{
-                        y: [-10, -30, -10],
-                        x: [-5, 5, -5],
-                        opacity: [0, 1, 0],
-                      }}
-                      transition={{
-                        duration: 3 + i * 0.5,
-                        repeat: Infinity,
-                        delay: i * 0.8,
-                        ease: "easeInOut"
-                      }}
-                    />
-                  ))}
-                </motion.div> */}
-              </motion.div>
-
-              {/* Status indicator */}
-              {/* <motion.div
-                className="absolute bottom-2 right-2 w-6 h-6 bg-orange-500 rounded-full border-3 border-black flex items-center justify-center"
-                animate={{
-                  scale: [1, 1.2, 1],
-                }}
-                transition={{
-                  duration: 2,
-                  repeat: Infinity,
-                  ease: "easeInOut"
-                }}
-              >
-                <motion.div
-                  className="w-2 h-2 bg-black rounded-full"
-                  animate={{
-                    opacity: [1, 0.5, 1],
-                  }}
-                  transition={{
-                    duration: 1.5,
-                    repeat: Infinity,
-                    ease: "easeInOut"
-                  }}
-                />
-              </motion.div> */}
-            </div>
-          </motion.div>
-
-          <div className="text-center">
-            <motion.h1 
-              className="text-5xl tracking-tight text-balance text-white sm:text-7xl font-[var(--font-display)]"
+          <div className="flex flex-col-reverse items-center gap-8 lg:flex-row lg:items-center lg:justify-center">
+            <motion.div
+              className="flex-1 text-left"
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.3 }}
             >
-              Ishan Vepa
-            </motion.h1>
-            <motion.p 
-              className="mt-4 text-2xl font-medium text-orange-500 sm:text-3xl"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.4 }}
-            >
-              CS @ Georgia Tech
-            </motion.p>
-            {/* <motion.p 
-              className="mt-8 text-lg font-medium text-pretty text-gray-300 sm:text-xl/8"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.5 }}
-            >
-              Crafting elegant solutions with modern technologies. Passionate about building scalable applications and intuitive user experiences.
-            </motion.p> */}
+              <div className="flex flex-col items-start space-y-8">
+                <h1 className="text-6xl lg:text-6xl font-serif pb-10 text-amber-50">
+                  Hi, I'm Ishan Vepa.
+                </h1>
+
+                <div className="border-l-4 border-primary border-opacity-70 pl-6 space-y-2 max-w-xl">
+                    <p className="text-amber-100 text-lg">
+                      <span className="bg-clip-text text-transparent bg-gradient-to-r from-amber-300 to-primary font-semibold">Studying</span> CS <span className="text-amber-100">@ Georgia Tech</span>
+                    </p>
+                    <p className="text-amber-100 text-lg">
+                      <span className="bg-clip-text text-transparent bg-gradient-to-r from-amber-300 to-primary font-semibold">Researching</span> HCI <span className="text-amber-100">@ Sonification Lab & Design Studio</span>
+                    </p>
+                  {/* <p className="text-emerald-400 text-lg">
+                    Prev. Engineering <span className="text-amber-100">@ SitScape Inc</span>
+                  </p> */}
+                </div>
+
+                <motion.div
+                  className="mt-6 flex items-center justify-start gap-x-6 pt-10"
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.8, delay: 0.6 }}
+                >
+                  <a
+                    href="#projects"
+                    className="rounded-md bg-gradient-to-r from-orange-400 via-orange-500 to-amber-300 px-3.5 py-2.5 text-sm font-semibold text-black shadow-lg hover:shadow-2xl focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-500 transition-all duration-300 ease-out transform-gpu hover:scale-105 hover:-translate-y-1 hover:from-orange-500 hover:via-orange-600 hover:to-amber-400"
+                  >
+                    View My Work
+                  </a>
+                  <a
+                    href="/Ishan_Vepa_Resume.pdf"
+                    download="ishan_vepa_resume.pdf"
+                    className="text-sm/6 font-semibold text-white hover:text-orange-400 transition-colors"
+                  >
+                    Download Resume <span aria-hidden="true">→</span>
+                  </a>
+                  <a
+                    href="https://linkedin.com/in/ishanvepa"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-white hover:text-orange-400 transition-colors"
+                  >
+                    <Linkedin size={24} />
+                  </a>
+                  <a
+                    href="https://github.com/ishanvepa"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-white hover:text-orange-400 transition-colors"
+                  >
+                    <Github size={24} />
+                  </a>
+                </motion.div>
+              </div>
+            </motion.div>
+
+            {/* Profile Picture Section (right column) */}
             <motion.div 
-              className="mt-10 flex items-center justify-center gap-x-6"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.6 }}
+              className="flex-shrink-0"
+              initial={{ opacity: 0, scale: 0.8, y: 30 }}
+              animate={{ opacity: 1, scale: 1, y: 0 }}
+              transition={{ duration: 1, delay: 0.1 }}
             >
-              <a
-                href="#projects"
-                className="rounded-md bg-orange-500 px-3.5 py-2.5 text-sm font-semibold text-black shadow-xs hover:bg-orange-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-500 transition-colors"
-              >
-                View My Work
-              </a>
-              <a
-                href="/Ishan_Vepa_Resume.pdf"
-                download="ishan_vepa_resume.pdf"
-                className="text-sm/6 font-semibold text-white hover:text-orange-400 transition-colors"
-              >
-                Download Resume <span aria-hidden="true">→</span>
-              </a>
-              <a
-                href="https://linkedin.com/in/ishanvepa"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-white hover:text-orange-400 transition-colors"
-              >
-                <Linkedin size={24} />
-              </a>
-              <a
-                href="https://github.com/ishanvepa"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-white hover:text-orange-400 transition-colors"
-              >
-                <Github size={24} />
-              </a>
+              <div className="relative group">
+                <motion.div
+                  className="absolute -inset-2 bg-gradient-to-r from-orange-600 via-orange-500 to-amber-300 rounded-full blur-lg opacity-20 group-hover:opacity-40 transition-all duration-500"
+                  animate={{
+                    scale: [1, 1.05, 1],
+                    rotate: [0, 180, 360],
+                  }}
+                  transition={{
+                    duration: 8,
+                    repeat: Infinity,
+                    ease: "easeInOut"
+                  }}
+                />
+
+                <motion.div
+                  className="relative w-36 h-36 sm:w-44 sm:h-44 rounded-full overflow-hidden border-4 border-orange-500/30 bg-gradient-to-br from-orange-500/10 to-purple-500/10 backdrop-blur-sm"
+                  whileHover={{ 
+                    scale: 1.05,
+                    rotate: 3,
+                    transition: { duration: 0.3 }
+                  }}
+                >
+                  <Image
+                    src="/profpic.jpeg"
+                    alt="Ishan Vepa - CS @ Georgia Tech"
+                    fill
+                    className="object-cover group-hover:scale-110 transition-transform duration-500"
+                    priority
+                  />
+                </motion.div>
+              </div>
             </motion.div>
           </div>
         </div>
