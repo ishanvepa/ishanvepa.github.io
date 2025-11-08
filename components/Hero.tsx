@@ -77,6 +77,20 @@ export default function SimpleCentered() {
                 </div>
               </a>
             </div> */}
+            <a href="#" className="-m-4 relative group">
+                <span className="sr-only">Ishan Vepa</span>
+                <div className="absolute -inset-2 "></div>
+                <Image
+                  src="/largeishan_favicon(1).png"
+                  alt="Ishan Vepa"
+                  width={32}
+                  height={32}
+                  className="rounded-lg object-cover relative z-10 group-hover:scale-110 transition-transform duration-300"
+                />
+            </a>
+            <div className="mx-4 ml-7 hidden lg:flex items-center" aria-hidden="true">
+              <div role="separator" aria-orientation="vertical" className="h-6 w-px bg-white/10 rounded" />
+            </div>
             
             <div className="flex items-center gap-x-8 justify-center">
               {navigation.map((item) => (
@@ -186,7 +200,7 @@ export default function SimpleCentered() {
               transition={{ duration: 0.8, delay: 0.2 }}
             >
               Want to connect?{' '}
-              <a href="#contact" className="font-semibold text-orange-400 hover:text-orange-400 transition-all">
+              <a href="#contact" className="font-semibold bg-clip-text text-transparent bg-gradient-to-r from-amber-300 to-primary hover:font-bold transition-all">
                 <span aria-hidden="true" className="absolute inset-0 transition-all" />
                 Get in touch <span aria-hidden="true">&rarr;
 
@@ -203,16 +217,17 @@ export default function SimpleCentered() {
               transition={{ duration: 0.8, delay: 0.3 }}
             >
               <div className="flex flex-col items-start space-y-8">
-                <h1 className="text-6xl lg:text-6xl font-serif pb-10 text-amber-50">
+                <h1 className="text-6xl lg:text-6xl font-serif pb-10 text-white">
                   Hi, I'm Ishan Vepa.
                 </h1>
 
                 <div className="border-l-4 border-primary border-opacity-70 pl-6 space-y-2 max-w-xl">
-                    <p className="text-amber-100 text-lg">
-                      <span className="bg-clip-text text-transparent bg-gradient-to-r from-amber-300 to-primary font-semibold">Studying</span> CS <span className="text-amber-100">@ Georgia Tech</span>
+                    <p className="text-white text-lg">
+                      <span className="bg-clip-text text-transparent bg-gradient-to-r from-amber-300 to-primary font-semibold">Studying</span> CS <span className="text-white">@ <a href="http://gatech.edu/" target="_blank" rel="noopener noreferrer" className="hover:text-amber-200 transition-colors">Georgia Tech</a></span>
                     </p>
-                    <p className="text-amber-100 text-lg">
-                      <span className="bg-clip-text text-transparent bg-gradient-to-r from-amber-300 to-primary font-semibold">Researching</span> HCI <span className="text-amber-100">@ Sonification Lab & Design Studio</span>
+                    <p className="text-white text-lg">
+                      <span className="bg-clip-text text-transparent bg-gradient-to-r from-amber-300 to-primary font-semibold">Researching</span> HCI <span className="text-white">@ <a href="http://sonify.psych.gatech.edu/" target="_blank" rel="noopener noreferrer" className="hover:text-amber-200 transition-colors">
+                      Sonification Lab & Design Studio</a></span>
                     </p>
                   {/* <p className="text-emerald-400 text-lg">
                     Prev. Engineering <span className="text-amber-100">@ SitScape Inc</span>

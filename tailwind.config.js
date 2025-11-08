@@ -17,9 +17,9 @@ module.exports = {
       'muted-foreground': '#888888', // optional
       background: '#0d0d0d', 
       foreground: '#ffffff', 
-      'text-secondary': '#bbbbbb',
+      'text-secondary': '#fffbeb',
       border: '#333333',
-  primary: '#f97316', // orange-500 as example
+      primary: '#f97316', // orange-500 as example
       accent: '#ef4444',  // indigo-500 as example 
       muted: '#1f2937'    // slate-800 as example 
     }

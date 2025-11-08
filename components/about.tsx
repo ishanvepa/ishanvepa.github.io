@@ -98,17 +98,17 @@ export default function AboutSection() {
               
               <div className="space-y-6 text-lg leading-relaxed font-[var(--font-body)]">
                 <motion.p 
-                  className="text-text-secondary"
+                  className="text-white"
                   initial={{ opacity: 0, y: 20 }}
                   animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
                   transition={{ duration: 0.6, delay: 0.4 }}
                 >
-                  I have an avid interest in technology and computer science. I am currently pursuing a Bachelor of Science in Computer Science at the{' '}
+                  I have a passion for building intelligent, human-centered systems. I am currently pursuing a Bachelor of Science in Computer Science at the{' '}
                   <Link
                     href="https://gatech.edu"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-amber-500 hover:text-amber-500/80 font-semibold transition-all"
+                    className="bg-clip-text text-transparent bg-gradient-to-r from-amber-300 to-primary font-semibold hover:opacity-80 transition-all"
                   >
                     Georgia Institute of Technology
                   </Link>
@@ -116,7 +116,7 @@ export default function AboutSection() {
                 </motion.p>
 
                 <motion.p 
-                  className="text-text-secondary"
+                  className="text-white"
                   initial={{ opacity: 0, y: 20 }}
                   animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
                   transition={{ duration: 0.6, delay: 0.5 }}
