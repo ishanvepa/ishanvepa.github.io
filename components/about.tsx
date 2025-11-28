@@ -11,7 +11,7 @@ export default function AboutSection() {
   return (
     <section 
       ref={ref}
-      className="py-24 px-6 md:px-8 lg:px-12 bg-card relative overflow-hidden"
+      className="py-24 px-6 md:px-8 lg:px-12 relative overflow-hidden"
       id="about"
     >
       {/* Background gradient overlay */}

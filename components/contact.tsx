@@ -4,7 +4,7 @@ import { Linkedin, Mail } from "lucide-react";
 
 export function Contact() {
   return (
-    <div id="contact" className="bg-black w-full flex items-center justify-center">      
+    <div id="contact" className="w-full flex items-center justify-center">      
 
       <div className="flex relative px-4 z-20 items-center w-full justify-center py-20">
         <div className="mx-auto w-full max-w-lg text-center">

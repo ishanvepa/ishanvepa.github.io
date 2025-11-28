@@ -18,9 +18,9 @@ export default function SimpleCentered() {
 
   return (
     // <div className="bg-black bg-gradient-to-br from-primary/5 via-transparent to-accent/5 min-h-screen relative overflow-hidden">
-    <div className="bg-black min-h-screen relative overflow-hidden">      
+    <div className="min-h-screen relative overflow-hidden">      
       {/* Animated background elements */}
-      <div className="absolute inset-0 -z-10">
+      {/* <div className="absolute inset-0 -z-10">
         <motion.div
           className="absolute top-1/4 left-1/4 w-64 h-64 bg-orange-500/5 rounded-full blur-3xl"
           animate={{
@@ -57,7 +57,7 @@ export default function SimpleCentered() {
             ease: "easeInOut"
           }}
         />
-      </div>
+      </div> */}
 
       <header className="fixed inset-x-0 top-6 z-50 px-6 lg:px-8">
         <motion.nav 

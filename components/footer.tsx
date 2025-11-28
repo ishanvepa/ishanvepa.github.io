@@ -25,7 +25,7 @@ export function Footer() {
 
   return (
     // <div className="border-border px-8 py-20 bg-black w-full relative overflow-hidden bg-gradient-to-bl from-accent/5 via-transparent to-primary/5 ">
-    <div className="border-border px-8 py-20 bg-black w-full relative overflow-hidden">
+    <div className="border-border px-8 py-20 w-full relative overflow-hidden">
       <div className="max-w-7xl mx-auto text-sm text-text-secondary justify-between items-start md:px-8">
         <div className="flex flex-col items-center justify-center w-full relative">
           {/* <div className="mr-0 md:mr-4 md:flex mb-4">

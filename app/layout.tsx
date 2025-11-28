@@ -18,12 +18,14 @@ export default function RootLayout({
 }) {
   return (
     <html className = "scroll-smooth" lang="en">
-      <body className={` ${inter.className} bg-neutral-900	 text-[#eaeaea] relative h-[2000px] justify-center `} >
+      <body className={` ${inter.className} bg-black	 text-[#000000] relative h-[2000px] justify-center `} >
         {/* <Header /> */}
-        {/* <div className="bg-[#308341] absolute top[-6rem] -z-10 right-[0rem] h-[31.25rem] w-[31.25rem] rounded-full blur-[15rem] sm:w-[68.75rem]"></div>     
-        <div className="bg-[#ffd787] absolute top[-1rem] -z-10 left-[-35rem] h-[31.25rem] w-[50rem] rounded-full blur-[15rem] sm:w-[68rem] md:left-[-33rem] lg:left-[-28rem] xl:left-[-15rem] 2xl:left-[-5rem]"></div> */}
-        {children}
-        
+        <div className="bg-amber-400 absolute top-[2rem] -z-30 left-[0rem] h-[25rem] w-[25rem] rounded-full blur-[10rem] sm:w-[68.75rem]"></div>     
+        <div className="bg-yellow-600 absolute top-[20rem] -z-30 right-[0rem] h-[20rem] w-[20rem] rounded-full blur-[8rem] sm:w-[45rem] sm:h-[45rem]"></div>
+        <div className="hidden md:block absolute inset-x-28 top-28 bottom-28 bg-white/30 rounded-3xl -z-20 backdrop-blur-3xl"></div>
+        <div className="relative bg-black/60 z-10">
+          {children}
+        </div>
       </body>
     </html>
   )
