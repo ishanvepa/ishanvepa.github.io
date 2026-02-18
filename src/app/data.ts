@@ -21,19 +21,30 @@ export const experience = [
     logo: "/sitscape_logo.png",
     fallback: "SS",
   },
-  {
-    company: "Georgia Tech Sonification Lab & Design Studio",
-    role: "Graduate Researcher",
-    date: "Aug 2024 - Present",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/b/bf/Georgia_Tech_Yellow_Jackets_logo.svg",
-    fallback: "GT",
-  },
+  // {
+  //   company: "Georgia Tech Sonification Lab & Design Studio",
+  //   role: "Graduate Researcher",
+  //   date: "Aug 2024 - Present",
+  //   logo: "https://upload.wikimedia.org/wikipedia/commons/b/bf/Georgia_Tech_Yellow_Jackets_logo.svg",
+  //   fallback: "GT",
+  // },
   {
     company: "Datamaxx Group",
     role: "Software Engineering Intern",
     date: "May 2024 – Aug 2024",
     logo: "/datamaxx_logo.png",
     fallback: "Dm",
+  },
+] as const;
+
+export const research = [
+  {
+    institution: "Georgia Tech Sonification Lab & Design Studio",
+    role: "Graduate Researcher",
+    date: "Aug 2024 – Present",
+    desc: "Conducting HCI research on accessible big data systems.",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/b/bf/Georgia_Tech_Yellow_Jackets_logo.svg",
+    fallback: "GT",
   },
 ] as const;
 
@@ -72,6 +83,14 @@ export const projects = [
     tags: ["Python", "BeautifulSoup", "urllib", "xlsxwriter", "openpyxl"],
     github: "https://github.com/ishanvepa/pop-music-comparative-analyzer",
     image: "/billboard_web_scraper_code.png",
+  },
+] as const;
+
+// Spotify embed URLs: https://open.spotify.com/embed/track/{id} or /album/{id}
+export const music = [
+  {
+    title: "Track Title",
+    spotifyEmbedUrl: "https://open.spotify.com/embed/track/1oSukkADTjJzuzo31OHWRC?utm_source=generator",
   },
 ] as const;
 
