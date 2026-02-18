@@ -16,13 +16,13 @@
 }
 
 [data-theme="light"] {
-  --bg: #f8f8f8;
-  --text: #111;
-  --muted: #666;
-  --border: #e0e0e0;
-  --subtle: #999;
-  --card: #e8e8e8;
-  --card-deep: #efefef;
+  --bg: #f5f0e8;
+  --text: #1a1612;
+  --muted: #7a6f62;
+  --border: #ddd6c8;
+  --subtle: #9e9185;
+  --card: #ede7da;
+  --card-deep: #e6dfd0;
 }
 
 html {
