@@ -11,7 +11,7 @@ export default function Hero() {
           src="/profile_picture.jpeg"
           alt="Ishan Vepa"
           fill
-          style={{ objectFit: "cover" }}
+          style={{ objectFit: "cover", transform: "scale(1.2)" }}
         />
       </div>
 

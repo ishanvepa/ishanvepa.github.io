@@ -4,11 +4,25 @@
   padding: 0;
 }
 
-:root {
+:root,
+[data-theme="dark"] {
   --bg: #111;
   --text: #e5e5e5;
   --muted: #888;
   --border: #222;
+  --subtle: #666;
+  --card: #1a1a1a;
+  --card-deep: #161616;
+}
+
+[data-theme="light"] {
+  --bg: #f8f8f8;
+  --text: #111;
+  --muted: #666;
+  --border: #e0e0e0;
+  --subtle: #999;
+  --card: #e8e8e8;
+  --card-deep: #efefef;
 }
 
 html {
@@ -22,4 +36,5 @@ body {
   font-weight: 300;
   font-size: 14px;
   line-height: 1.6;
+  transition: background 0.2s, color 0.2s;
 }
