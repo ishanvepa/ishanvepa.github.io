@@ -10,7 +10,7 @@ const geist = Geist({
 
 export const metadata: Metadata = {
   title: "Ishan Vepa",
-  description: "incoming eng @ adobe | cs @ gatech",
+  description: "CS student at Georgia Tech studying Human-Computer Interaction. When I'm not programming, you may find me transcribing jazz records, trying new shaken espressos, and watching Premier League soccer (GGMU ifykyk).",
 };
 
 export default function RootLayout({
