@@ -15,9 +15,9 @@ export default function Home() {
       <Experiences />
       <Research />
       <Projects />
-      <Skills />
+      {/* <Skills /> */}
       <Music />
-      <About />
+      {/* <About /> */}
       <Footer />
     </main>
   );

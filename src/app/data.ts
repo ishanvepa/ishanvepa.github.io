@@ -59,7 +59,7 @@ export const projects = [
   {
     name: "AI Academic Research Engine",
     desc: "Engineered a scalable RAG pipeline that ingests papers via academic journal APIs into FAISS vectorstore. Enabled vector search for 200M+ abstracts, designing 10+ REST endpoints for query processing. Fine-tuned BART model using PEFT to perform literature review through abstractive text summarization.",
-    tags: ["Next.js", "React.js", "Flask", "LangChain FAISS", "Python", "BART", "PEFT"],
+    tags: ["Next.js", "React.js", "Flask", "LangChain FAISS", "Python"],
     github: "https://github.com/ishanvepa/AI-Academic-Research-Engine",
     image: "/AI_Academic_Search_Engine.png",
   },
