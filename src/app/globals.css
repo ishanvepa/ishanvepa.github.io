@@ -1,0 +1,40 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root,
+[data-theme="dark"] {
+  --bg: #111;
+  --text: #e5e5e5;
+  --muted: #888;
+  --border: #222;
+  --subtle: #666;
+  --card: #1a1a1a;
+  --card-deep: #161616;
+}
+
+[data-theme="light"] {
+  --bg: #f5f0e8;
+  --text: #1a1612;
+  --muted: #7a6f62;
+  --border: #ddd6c8;
+  --subtle: #9e9185;
+  --card: #ede7da;
+  --card-deep: #e6dfd0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-geist), -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.6;
+  transition: background 0.2s, color 0.2s;
+}
