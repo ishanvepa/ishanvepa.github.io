@@ -7,13 +7,13 @@ export const links = [
 ] as const;
 
 export const experience = [
-  {
-    company: "Adobe",
-    role: "Software Engineering Intern",
-    date: "May 2026 – Aug 2026",
-    logo: "/adobe_logo.png",
-    fallback: "Ad",
-  },
+  // {
+  //   company: "Adobe",
+  //   role: "Software Engineering Intern",
+  //   date: "May 2026 – Aug 2026",
+  //   logo: "/adobe_logo.png",
+  //   fallback: "Ad",
+  // },
   {
     company: "SitScape",
     role: "AI Engineering Intern",
@@ -34,6 +34,23 @@ export const experience = [
     date: "May 2024 – Aug 2024",
     logo: "/datamaxx_logo.png",
     fallback: "Dm",
+  },
+] as const;
+
+export const education = [
+  {
+    institution: "Georgia Institute of Technology",
+    degree: "M.S. Computer Science: Human-Computer Interaction",
+    date: "Jan 2026 – Present",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/b/bf/Georgia_Tech_Yellow_Jackets_logo.svg",
+    fallback: "GT",
+  },
+  {
+    institution: "Georgia Institute of Technology",
+    degree: "B.S. Computer Science",
+    date: "Aug 2022 – Dec 2025",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/b/bf/Georgia_Tech_Yellow_Jackets_logo.svg",
+    fallback: "GT",
   },
 ] as const;
 

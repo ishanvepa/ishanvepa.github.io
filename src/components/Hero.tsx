@@ -27,7 +27,7 @@ export default function Hero() {
       </nav>
 
       {/* Bio */}
-      <p className={styles.bio}>incoming eng @ <span style={{ background: "linear-gradient(90deg, #8B0000, #FF0000)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundClip: "text" }}>adobe</span> | cs @ <span style={{ background: "linear-gradient(90deg, #1a5276, #B3A369)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundClip: "text" }}>gatech</span></p>
+      {/* <p className={styles.bio}>incoming eng @ <span style={{ background: "linear-gradient(90deg, #8B0000, #FF0000)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundClip: "text" }}>adobe</span> | cs @ <span style={{ background: "linear-gradient(90deg, #1a5276, #B3A369)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundClip: "text" }}>gatech</span></p> */}
       <p className={styles.bioExtended}>
         CS student at Georgia Tech studying Human-Computer Interaction. When I'm not programming, you may find me transcribing
         jazz records, trying new shaken espressos, and watching Premier League soccer (GGMU ifykyk).
