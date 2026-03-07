@@ -7,13 +7,13 @@ export const links = [
 ] as const;
 
 export const experience = [
-  // {
-  //   company: "Adobe",
-  //   role: "Software Engineering Intern",
-  //   date: "May 2026 – Aug 2026",
-  //   logo: "/adobe_logo.png",
-  //   fallback: "Ad",
-  // },
+  {
+    company: "Adobe",
+    role: "Software Engineering Intern",
+    date: "May 2026 – Aug 2026",
+    logo: "/adobe_logo.png",
+    fallback: "Ad",
+  },
   {
     company: "SitScape",
     role: "AI Engineering Intern",

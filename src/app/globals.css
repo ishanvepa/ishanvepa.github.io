@@ -6,7 +6,7 @@
 
 :root,
 [data-theme="dark"] {
-  --bg: #111;
+  --bg: #0a0a0a;
   --text: #e5e5e5;
   --muted: #888;
   --border: #222;
@@ -16,7 +16,7 @@
 }
 
 [data-theme="light"] {
-  --bg: #f5f0e8;
+  --bg: #fceed7;
   --text: #1a1612;
   --muted: #7a6f62;
   --border: #ddd6c8;
