@@ -14,8 +14,8 @@ export default function Home() {
     <main className={styles.main}>
       <Hero />
       <Experiences />
-      <Research />
       <Education />
+      <Research />
       <Projects />
       {/* <Skills /> */}
       <Music />

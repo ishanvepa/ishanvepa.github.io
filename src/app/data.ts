@@ -65,6 +65,18 @@ export const research = [
   },
 ] as const;
 
+export const publications = [
+  {
+    authors: "Ishan Vepa, Jessica Herring, Isabella Martincic, and Bruce N. Walker",
+    year: "2026",
+    title: "Inclusive Climate Communications: Accessible Hurricane Tracking Maps for the Web",
+    venue: "Web4All 2026: 23rd International Web for All Conference (W4A '26)",
+    location: "April 13–14, 2026, Dubai, UAE.",
+    publisher: "ACM, New York, NY, USA. 2 pages.",
+    doi: "https://doi.org/10.1145/3800424.3800436",
+  },
+] as const;
+
 export const projects = [
   {
     name: "Agentic AI Email Assistant",
