@@ -38,7 +38,16 @@
 @media (max-width: 900px) {
   .widget {
     top: 14px;
-    right: 14px;
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%);
+    width: max-content;
     max-width: calc(100vw - 20px);
+    justify-content: center;
+    text-align: center;
+  }
+
+  .widget:hover {
+    transform: translateX(-50%) translateY(-1px);
   }
 }

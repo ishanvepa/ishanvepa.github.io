@@ -330,6 +330,10 @@
     padding: 48px 20px 60px;
   }
 
+  .avatar {
+    margin: 15px auto 16px;
+  }
+
   .expDate {
     display: none;
   }
