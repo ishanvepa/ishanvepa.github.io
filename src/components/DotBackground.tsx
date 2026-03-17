@@ -2,10 +2,38 @@
 
 import { useEffect, useRef } from "react";
 
-const SPACING = 28;
-const BASE_RADIUS = 1.4;
-const MAX_RADIUS = 3.5;
+const SPACING = 36;
+const BASE_RADIUS = 1;
+const MAX_RADIUS = 2.6;
 const INFLUENCE_RADIUS = 80;
+const OPACITY_SECTIONS = [
+  [0.08, 0.13, 0.26, 0.14, 0.09],
+  [0.11, 0.2, 0.32, 0.24, 0.12],
+  [0.07, 0.15, 0.27, 0.19, 0.1],
+  [0.05, 0.11, 0.18, 0.12, 0.07],
+];
+
+function lerp(start: number, end: number, amount: number) {
+  return start + (end - start) * amount;
+}
+
+function getSectionOpacity(x: number, y: number, width: number, height: number) {
+  const maxCol = OPACITY_SECTIONS[0].length - 1;
+  const maxRow = OPACITY_SECTIONS.length - 1;
+  const normalizedX = width <= 0 ? 0 : (x / width) * maxCol;
+  const normalizedY = height <= 0 ? 0 : (y / height) * maxRow;
+  const col0 = Math.floor(normalizedX);
+  const row0 = Math.floor(normalizedY);
+  const col1 = Math.min(col0 + 1, maxCol);
+  const row1 = Math.min(row0 + 1, maxRow);
+  const blendX = normalizedX - col0;
+  const blendY = normalizedY - row0;
+
+  const top = lerp(OPACITY_SECTIONS[row0][col0], OPACITY_SECTIONS[row0][col1], blendX);
+  const bottom = lerp(OPACITY_SECTIONS[row1][col0], OPACITY_SECTIONS[row1][col1], blendX);
+
+  return lerp(top, bottom, blendY);
+}
 
 export default function DotBackground() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -20,17 +48,16 @@ export default function DotBackground() {
     const mouse = { x: -9999, y: -9999 };
 
     function getThemeColors() {
-      const isDark =
-        document.documentElement.getAttribute("data-theme") !== "light";
+      const isDark = document.documentElement.dataset.theme !== "light";
       return {
-        base: isDark ? "rgba(255,255,255,0.12)" : "rgba(139,101,60,0.18)",
-        glow: isDark ? "rgba(255,255,255,0.75)" : "rgba(139,101,60,0.65)",
+        base: isDark ? "255,255,255" : "139,101,60",
+        glow: isDark ? "255,255,255" : "139,101,60",
       };
     }
 
     function resize() {
-      canvas!.width = window.innerWidth;
-      canvas!.height = window.innerHeight;
+      canvas!.width = globalThis.innerWidth;
+      canvas!.height = globalThis.innerHeight;
     }
 
     function draw() {
@@ -44,29 +71,27 @@ export default function DotBackground() {
         for (let col = 0; col < cols; col++) {
           const x = col * SPACING;
           const y = row * SPACING;
+          const baseOpacity = getSectionOpacity(x, y, canvas!.width, canvas!.height);
 
           const dx = x - mouse.x;
           const dy = y - mouse.y;
-          const dist = Math.sqrt(dx * dx + dy * dy);
+          const dist = Math.hypot(dx, dy);
 
           let radius = BASE_RADIUS;
+          let alpha = baseOpacity;
           let color = base;
 
           if (dist < INFLUENCE_RADIUS) {
-            const t = 1 - dist / INFLUENCE_RADIUS; // 0 → 1 as cursor approaches
+            const t = 1 - dist / INFLUENCE_RADIUS;
             radius = BASE_RADIUS + (MAX_RADIUS - BASE_RADIUS) * t * t;
-            // Interpolate colour strings — use alpha blending shortcut via globalAlpha
             color = glow;
-            ctx!.globalAlpha = 0.12 + 0.63 * t * t;
-          } else {
-            ctx!.globalAlpha = 1;
+            alpha = Math.min(0.82, baseOpacity + 0.58 * t * t);
           }
 
           ctx!.beginPath();
           ctx!.arc(x, y, radius, 0, Math.PI * 2);
-          ctx!.fillStyle = color;
+          ctx!.fillStyle = `rgba(${color}, ${alpha})`;
           ctx!.fill();
-          ctx!.globalAlpha = 1;
         }
       }
 
@@ -86,14 +111,14 @@ export default function DotBackground() {
     resize();
     draw();
 
-    window.addEventListener("resize", resize);
-    window.addEventListener("mousemove", onMouseMove);
+    globalThis.addEventListener("resize", resize);
+    globalThis.addEventListener("mousemove", onMouseMove);
     document.addEventListener("mouseleave", onMouseLeave);
 
     return () => {
       cancelAnimationFrame(animFrameId);
-      window.removeEventListener("resize", resize);
-      window.removeEventListener("mousemove", onMouseMove);
+      globalThis.removeEventListener("resize", resize);
+      globalThis.removeEventListener("mousemove", onMouseMove);
       document.removeEventListener("mouseleave", onMouseLeave);
     };
   }, []);
@@ -109,7 +134,6 @@ export default function DotBackground() {
         zIndex: 0,
         pointerEvents: "none",
       }}
-      aria-hidden="true"
     />
   );
 }
