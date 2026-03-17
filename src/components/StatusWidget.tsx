@@ -31,16 +31,16 @@ function formatTime(now: Date): string {
   return tzPart ? `${time} ${tzPart}` : time;
 }
 
-function weatherCodeToIconInfo(code: number | null): WeatherIconInfo {
+function weatherCodeToIconInfo(code: number | null, isDay: boolean): WeatherIconInfo {
   if (code === null) {
     return { icon: "-", label: "Weather unavailable" };
   }
-
+  
   if (code === 0) {
-    return { icon: "\u2600", label: "Clear" };
+    return { icon: isDay ? "\u2600" : "\u263E", label: "Clear" };
   }
   if (code === 1 || code === 2) {
-    return { icon: "\u26C5", label: "Partly cloudy" };
+    return { icon: isDay ? "\u26C5" : "\u263E", label: "Partly cloudy" };
   }
   if (code === 3) {
     return { icon: "\u2601", label: "Overcast" };
@@ -87,7 +87,7 @@ export default function StatusWidget() {
     async function loadWeather() {
       try {
         const weatherResp = await fetch(
-          `https://api.open-meteo.com/v1/forecast?latitude=${ATLANTA_LAT}&longitude=${ATLANTA_LON}&current=temperature_2m,weather_code&temperature_unit=fahrenheit`
+          `https://api.open-meteo.com/v1/forecast?latitude=${ATLANTA_LAT}&longitude=${ATLANTA_LON}&current=temperature_2m,weather_code,is_day&temperature_unit=fahrenheit`
         );
         const weatherJson = weatherResp.ok ? await weatherResp.json() : null;
 
@@ -99,7 +99,8 @@ export default function StatusWidget() {
           typeof weatherJson?.current?.weather_code === "number"
             ? weatherJson.current.weather_code
             : null;
-        const weatherInfo = weatherCodeToIconInfo(weatherCode);
+        const isDay = weatherJson?.current?.is_day === 1;
+        const weatherInfo = weatherCodeToIconInfo(weatherCode, isDay);
 
         if (!cancelled) {
           setWeatherData({
