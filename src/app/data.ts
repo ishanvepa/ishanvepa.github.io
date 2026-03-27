@@ -9,14 +9,14 @@ export const links = [
 export const experience = [
   {
     company: "Adobe",
-    role: "Software Engineering Intern",
+    role: "Software Engineer Intern",
     date: "May 2026 – Aug 2026",
     logo: "/adobe_logo.png",
     fallback: "Ad",
   },
   {
     company: "SitScape",
-    role: "AI Engineering Intern",
+    role: "AI Engineer Intern",
     date: "Jun 2025 – Aug 2025",
     logo: "/sitscape_logo.png",
     fallback: "SS",
@@ -30,7 +30,7 @@ export const experience = [
   // },
   {
     company: "Datamaxx Group",
-    role: "Software Engineering Intern",
+    role: "Software Engineer Intern",
     date: "May 2024 – Aug 2024",
     logo: "/datamaxx_logo.png",
     fallback: "Dm",
@@ -79,15 +79,22 @@ export const publications = [
 
 export const projects = [
   {
+    name: "Dryft Notes",
+    desc: "AI-powered cross-platform note‑taking app.",
+    tags: ["React Native", "Python", "Scikit-Learn", "LangChain FAISS", "Supabase", "Flask", "OpenAI API"],
+    github: "https://github.com/ishanvepa/dryft-notes",
+    image: "/dryftNotes.png",
+  },
+  {
     name: "Agentic AI Email Assistant",
-    desc: "Built a multi-agent AI assistant that fetches, summarizes, and takes actions on emails via natural prompts. Integrated LangGraph with ReAct agents to dynamically parse Gmail and schedule Google Calendar events through structured prompting and tool use.",
+    desc: "Multi-agent assistant for email & calendar.",
     tags: ["LangGraph", "LangChain", "ReAct Multi-Agentic Architecture", "Gmail API", "Google Calendar API", "Python", "Flask", "Next.js"],
     github: "https://github.com/ishanvepa/agentic-email-assistant",
     image: "/agenticEmailAssistant.png",
   },
   {
     name: "AI Academic Research Engine",
-    desc: "Engineered a scalable RAG pipeline that ingests papers via academic journal APIs into FAISS vectorstore. Enabled vector search for 200M+ abstracts, designing 10+ REST endpoints for query processing.",
+    desc: "RAG pipeline for 200M+ research papers.",
     tags: ["Next.js", "React.js", "Flask", "LangChain FAISS", "Python"],
     github: "https://github.com/ishanvepa/AI-Academic-Research-Engine",
     image: "/AI_Academic_Search_Engine.png",
@@ -108,7 +115,7 @@ export const projects = [
   // },
   {
     name: "Computational Analysis of Contemporary Music",
-    desc: "Web-scraped Billboard Hot 100, comparative analysis, transcribed melodies, chord progressions, tempos, and keys of songs in Python. Leveraged Python API: BeautifulSoup, urllib, xlsxwriter, openpyxl. Completed research paper guided by the research question: \"Why do people enjoy music?\"",
+    desc: "Analyzed Billboard Hot 100 song patterns.",
     tags: ["Python", "BeautifulSoup", "urllib", "xlsxwriter", "openpyxl"],
     github: "https://github.com/ishanvepa/pop-music-comparative-analyzer",
     image: "/billboard_web_scraper_code.png",

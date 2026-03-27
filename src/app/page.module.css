@@ -1,5 +1,5 @@
 .main {
-  max-width: 560px;
+  max-width: 600px;
   margin: 0 auto;
   padding: 80px 24px;
   text-align: center;
@@ -172,26 +172,73 @@
 }
 
 /* PROJECTS */
-.projRow {
-  margin-bottom: 28px;
+.projGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.projCard {
   text-align: left;
   cursor: pointer;
   border-radius: 8px;
   padding: 10px 12px;
-  margin-left: -12px;
-  margin-right: -12px;
   background: transparent;
   border: 1px solid transparent;
   transition: background 0.2s ease, border-color 0.2s ease;
+  display: flex;
+  flex-direction: column;
 }
 
-.projRow:last-child {
-  margin-bottom: 0;
-}
-
-.projRow:hover {
+.projCard:hover {
   background: var(--card);
   border-color: var(--border);
+}
+
+.projPagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.projPageBtn {
+  background: none;
+  border: none;
+  color: var(--muted);
+  font-size: 14px;
+  cursor: pointer;
+  padding: 4px 6px;
+  border-radius: 4px;
+  transition: color 0.12s;
+  line-height: 1;
+}
+
+.projPageBtn:hover:not(:disabled) {
+  color: var(--text);
+}
+
+.projPageBtn:disabled {
+  opacity: 0.25;
+  cursor: default;
+}
+
+.projDot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--muted);
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  opacity: 0.35;
+  transition: opacity 0.15s;
+}
+
+.projDotActive {
+  opacity: 1;
 }
 
 .projImgWrap {
@@ -339,6 +386,10 @@
   }
 
   .projImgWrap {
-    height: 120px;
+    height: 100px;
+  }
+
+  .projGrid {
+    grid-template-columns: 1fr;
   }
 }
