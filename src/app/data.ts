@@ -7,10 +7,19 @@ export const links = [
 ] as const;
 
 export const experience = [
+  // {
+  //   company: "IBM (Silicon Valley Lab)",
+  //   role: "Software Development Engineer Co-op",
+  //   date: "Aug 2026 – Dec 2026",
+  //   location: "San Jose, CA",
+  //   logo: "/ibm_logo.png",
+  //   fallback: "IBM",
+  // },
   {
     company: "Adobe",
     role: "Software Engineer Intern",
     date: "May 2026 – Aug 2026",
+    location: "San Jose, CA",
     logo: "/adobe_logo.png",
     fallback: "Ad",
   },
@@ -18,6 +27,7 @@ export const experience = [
     company: "SitScape",
     role: "AI Engineer Intern",
     date: "Jun 2025 – Aug 2025",
+    location: "McLean, VA",
     logo: "/sitscape_logo.png",
     fallback: "SS",
   },
@@ -32,6 +42,7 @@ export const experience = [
     company: "Datamaxx Group",
     role: "Software Engineer Intern",
     date: "May 2024 – Aug 2024",
+    location: "Tallahassee, FL",
     logo: "/datamaxx_logo.png",
     fallback: "Dm",
   },
@@ -78,6 +89,13 @@ export const publications = [
 ] as const;
 
 export const projects = [
+  {
+    name: "Agentic Data Visualization",
+    desc: "Generates visualizations and insights from any type of data.",
+    tags: ["React Native", "Python", "Scikit-Learn", "LangChain FAISS", "Supabase", "Flask", "OpenAI API"],
+    github: "https://github.com/ishanvepa/agentic-data-visualization",
+    image: "/agenticDataVisualization.png",
+  },
   {
     name: "Dryft Notes",
     desc: "AI-powered cross-platform note‑taking app.",

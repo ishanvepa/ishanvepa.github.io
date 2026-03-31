@@ -17,6 +17,10 @@
   filter: grayscale(100%);
 }
 
+[data-theme="light"] .avatar {
+  filter: none;
+}
+
 /* NAME */
 .name {
   font-size: 14px;

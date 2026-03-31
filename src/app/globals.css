@@ -1,4 +1,6 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -18,10 +20,10 @@
 [data-theme="light"] {
   --bg: #fceed7;
   --text: #1a1612;
-  --muted: #7a6f62;
-  --border: #ddd6c8;
+  --muted: #674c2d;
+  --border: #c7ab70;
   --subtle: #9e9185;
-  --card: #ede7da;
+  --card: #ebcf91;
   --card-deep: #e6dfd0;
 }
 
