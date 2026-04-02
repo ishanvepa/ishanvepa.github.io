@@ -40,3 +40,11 @@ next-env.d.ts
 # IDE
 .vscode/
 .idea/
+
+# Python (api/)
+api/.venv/
+api/__pycache__/
+api/*.pyc
+__pycache__/
+*.pyc
+*.pyo

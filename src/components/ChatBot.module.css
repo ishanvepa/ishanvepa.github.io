@@ -1,0 +1,272 @@
+/* ─────────────────────────────────────────────
+   ChatBot overlay — mirrors the site's design tokens
+   ───────────────────────────────────────────── */
+
+/* ── Trigger button ── */
+.trigger {
+  position: fixed;
+  bottom: 72px; /* sits above the ThemeToggle at bottom: 24px */
+  right: 24px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--card);
+  border: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 15px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.12s, background 0.12s, border-color 0.12s;
+  z-index: 200;
+}
+
+.trigger:hover {
+  color: var(--text);
+}
+
+/* ── Panel ── */
+.panel {
+  position: fixed;
+  bottom: 120px;
+  right: 24px;
+  width: 320px;
+  max-height: 460px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  z-index: 199;
+
+  /* Hidden state */
+  opacity: 0;
+  transform: translateY(8px) scale(0.97);
+  pointer-events: none;
+  transition: opacity 0.18s ease, transform 0.18s ease;
+}
+
+.panelOpen {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  pointer-events: all;
+}
+
+/* ── Header ── */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--border);
+  flex-shrink: 0;
+}
+
+.headerLeft {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+/* Pulsing green dot */
+.dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #4caf87;
+  flex-shrink: 0;
+  animation: pulse 2.4s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.4; }
+}
+
+.headerTitle {
+  font-size: 12px;
+  color: var(--text);
+  font-weight: 400;
+  letter-spacing: 0.01em;
+}
+
+.headerSub {
+  font-size: 10px;
+  color: var(--subtle);
+}
+
+/* ── Messages ── */
+.messages {
+  flex: 1;
+  overflow-y: auto;
+  padding: 14px 14px 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  scrollbar-width: thin;
+  scrollbar-color: var(--border) transparent;
+}
+
+.messages::-webkit-scrollbar {
+  width: 4px;
+}
+.messages::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 4px;
+}
+
+/* ── Empty state ── */
+.empty {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+}
+
+.emptyText {
+  font-size: 12px;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.suggestions {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.suggestionBtn {
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 5px 10px;
+  font-size: 12px;
+  color: var(--muted);
+  cursor: pointer;
+  text-align: left;
+  font-family: inherit;
+  transition: background 0.12s, color 0.12s, border-color 0.12s;
+}
+
+.suggestionBtn:hover {
+  background: var(--card);
+  color: var(--text);
+  border-color: var(--border);
+}
+
+/* ── Bubbles ── */
+.bubble {
+  padding: 7px 11px;
+  border-radius: 8px;
+  font-size: 12px;
+  line-height: 1.65;
+  max-width: 88%;
+  word-break: break-word;
+}
+
+.bubbleUser {
+  background: var(--card);
+  border: 1px solid var(--border);
+  color: var(--text);
+  align-self: flex-end;
+}
+
+.bubbleBot {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--muted);
+  align-self: flex-start;
+}
+
+/* ── Typing indicator ── */
+.typingDots {
+  display: inline-flex;
+  gap: 4px;
+  align-items: center;
+  height: 14px;
+}
+
+.typingDots span {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--subtle);
+  animation: bounce 1.2s ease-in-out infinite;
+}
+
+.typingDots span:nth-child(2) { animation-delay: 0.2s; }
+.typingDots span:nth-child(3) { animation-delay: 0.4s; }
+
+@keyframes bounce {
+  0%, 80%, 100% { transform: translateY(0); }
+  40%           { transform: translateY(-4px); }
+}
+
+/* ── Input row ── */
+.inputRow {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 12px;
+  border-top: 1px solid var(--border);
+  flex-shrink: 0;
+}
+
+.input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 12px;
+  color: var(--text);
+  font-family: inherit;
+  caret-color: var(--muted);
+}
+
+.input::placeholder {
+  color: var(--subtle);
+}
+
+.input:disabled {
+  opacity: 0.5;
+}
+
+.sendBtn {
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  color: var(--muted);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: color 0.12s, background 0.12s;
+}
+
+.sendBtn:hover:not(:disabled) {
+  color: var(--text);
+}
+
+.sendBtn:disabled {
+  opacity: 0.3;
+  cursor: default;
+}
+
+/* ── Mobile ── */
+@media (max-width: 480px) {
+  .panel {
+    right: 12px;
+    left: 12px;
+    width: auto;
+    bottom: 116px;
+  }
+
+  .trigger {
+    right: 12px;
+  }
+}

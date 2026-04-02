@@ -4,6 +4,7 @@ import "./globals.css";
 import ThemeToggle from "@/components/ThemeToggle";
 import DotBackground from "@/components/DotBackground";
 import StatusWidget from "../components/StatusWidget";
+import ChatBot from "@/components/ChatBot";
 
 const geist = Geist({
   subsets: ["latin"],
@@ -30,6 +31,7 @@ export default function RootLayout({
           {children}
         </div>
         <ThemeToggle />
+        <ChatBot />
       </body>
     </html>
   );
