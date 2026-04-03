@@ -9,7 +9,7 @@ type Message = {
 };
 
 const API_URL =
-  process.env.NEXT_PUBLIC_CHATBOT_API_URL ?? "http://localhost:5000";
+  process.env.NEXT_PUBLIC_CHATBOT_API_URL ?? "https://ishanvepa-github-io-chatbot-api.onrender.com";
 
 // Generate a stable session ID for the browser tab
 function getSessionId(): string {
