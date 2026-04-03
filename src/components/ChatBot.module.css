@@ -10,19 +10,23 @@
   width: 36px;
   height: 36px;
   border-radius: 50%;
-  background: var(--card);
-  border: 1px solid var(--border);
+  background: color-mix(in srgb, var(--card) 64%, transparent);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border: 1px solid transparent;
   color: var(--muted);
   font-size: 15px;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: color 0.12s, background 0.12s, border-color 0.12s;
+  transition: color 0.12s, background 0.2s ease, border-color 0.2s ease;
   z-index: 200;
 }
 
 .trigger:hover {
+  background: var(--card);
+  border-color: var(--border);
   color: var(--text);
 }
 
@@ -33,8 +37,10 @@
   right: 24px;
   width: 320px;
   max-height: 460px;
-  background: var(--bg);
-  border: 1px solid var(--border);
+  background: color-mix(in srgb, var(--bg) 72%, transparent);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid transparent;
   border-radius: 12px;
   display: flex;
   flex-direction: column;
@@ -45,13 +51,14 @@
   opacity: 0;
   transform: translateY(8px) scale(0.97);
   pointer-events: none;
-  transition: opacity 0.18s ease, transform 0.18s ease;
+  transition: opacity 0.18s ease, transform 0.18s ease, background 0.2s ease, border-color 0.2s ease;
 }
 
 .panelOpen {
   opacity: 1;
   transform: translateY(0) scale(1);
   pointer-events: all;
+  border-color: var(--border);
 }
 
 /* ── Header ── */
@@ -60,7 +67,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 10px 14px;
-  border-bottom: 1px solid var(--border);
+  border-bottom: 1px solid color-mix(in srgb, var(--border) 60%, transparent);
   flex-shrink: 0;
 }
 
@@ -210,7 +217,7 @@
   align-items: center;
   gap: 6px;
   padding: 10px 12px;
-  border-top: 1px solid var(--border);
+  border-top: 1px solid color-mix(in srgb, var(--border) 60%, transparent);
   flex-shrink: 0;
 }
 
