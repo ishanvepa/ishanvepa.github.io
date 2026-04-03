@@ -1,0 +1,544 @@
+# Ishan Knowledge Base
+
+## Basic Identity
+Full name: Ishan Vepa
+Preferred name: Ishan
+Pronouns: He/Him
+Current location: Atlanta, GA
+Hometown: Tallahassee, FL
+Birthtown: Memphis, TN
+Nationality / background: 
+Current role/title: Incoming Software Engineer Intern at Adobe; Graduate Researcher at Georgia Tech Sonification Lab & Design Studio
+Short bio: Ishan Vepa is a computer science student at Georgia Tech focused on Human-Computer Interaction and Artificial Intelligence. He is an incoming engineering intern at Adobe and has prior internship experience at SitScape and Datamaxx Group. He also conducts HCI research on accessible big data systems at the Georgia Tech Sonification Lab & Design Studio.
+
+Personal interests mentioned on website:
+- transcribing jazz records
+- trying new shaken espressos
+- watching Premier League soccer
+- GGMU / Manchester United supporter reference
+- watching movies
+- listening to music (jazz, EDM/house, pop, r&b)
+
+
+## Education
+
+### Current Education
+School: Georgia Institute of Technology
+Degree: M.S. in Computer Science
+Major / concentration: Human-Computer Interaction
+Start date: January 2026
+Status: Present
+Expected graduation date: May 2026
+
+
+### Previous Education
+School: Georgia Institute of Technology
+Degree / diploma: B.S. in Computer Science
+Dates attended: August 2022 – December 2025
+Notable achievements:
+- Sidney Goldin Scholarship
+- Dean's List 
+
+### Study Abroad / Special Programs
+Institution: Oxford University 
+Dates: May 2023 - August 2025 
+Summary: Travelled across Europe (Italy, Germany, Austria, Czech Republic, France, Belgium, UK, Netherlands) and studied Artificial Intelligence & Computing Ethics as well as Personality Theory 
+
+
+## Work and Internship Experience
+
+### Role
+Company / organization: Adobe
+Job title: Incoming Software Engineer Intern
+Location: San Jose, CA
+Start date - End date: May 2026 – August 2026
+Status: Incoming
+What I did:
+-
+-
+-
+
+Technologies used:
+-
+-
+-
+
+Key impact / accomplishments:
+-
+-
+-
+
+Short summary sentence: Ishan is scheduled to join Adobe as a Software Engineer Intern in Summer 2026.
+
+### Role
+Company / organization: SitScape
+Job title: Software Engineer Intern / AI Engineer Intern
+Location: McLean, VA
+Start date - End date: June 2025 – August 2025
+Status: Previous
+What I did:
+- Engineered a “Generative UI” system with a multi-agent AI ReAct service using LangGraph/LangChain in Python
+- Automated front-end UI and event handling
+- Shipped a no-code RAG API
+- Authored documentation for both services
+
+Technologies used:
+- Python
+- LangGraph
+- LangChain
+- Flask
+- JavaScript
+- SQL
+- OpenAI API
+
+Key impact / accomplishments:
+- Reduced developer build time by 75%
+- Enabled 10+ Fortune 500 clients to deploy LLM-powered chat in production
+- Wrote documentation for a team of 30+ developers
+
+Short summary sentence: I worked on agentic AI systems and a no-code RAG API at SitScape.
+
+### Role
+Company / organization: Datamaxx Group
+Job title: Software Engineer Intern
+Location: Tallahassee, FL
+Start date - End date: May 2024 – August 2024
+Status: Previous
+What I did:
+- Developed an automated ID parsing and user face verification service in ASP.NET using AWS Textract and Rekognition
+- Implemented a QR code visitor check-in system
+-
+
+Technologies used:
+- C#
+- ASP.NET MVC
+- jQuery
+- HTML
+- CSS
+- SQL
+- AWS API
+
+Key impact / accomplishments:
+- Reduced user identity verification time by 67%, from 1 minute to 20 seconds
+- Improved user security screening efficiency for 100+ vendors
+-
+
+Short summary sentence: I built identity verification and visitor check-in systems at Datamaxx Group.
+
+### Role
+Company / organization: Snap Inc.
+Job title: Augmented Reality Software Development Extern
+Location: Remote
+Start date - End date: September 2024 – November 2024
+Status: Previous
+What I did:
+- Developed 3+ dynamic 2D/3D AR filters in Snap Lens Studio themed around Premier League Soccer
+- Used the Lens Scripting API for sentiment-driven effects
+-
+
+Technologies used:
+- JavaScript
+- Figma
+- Snap AR Lens Studio
+
+Key impact / accomplishments:
+- Increased user retention from 5 seconds to 15 seconds
+-
+-
+
+Short summary sentence: I built soccer-themed AR filters for Snap.
+
+
+## Research Experience
+
+### Project / Lab Name
+Institution / lab: Georgia Tech Sonification Lab & Design Studio
+Role: Graduate Researcher / Graduate Research Assistant, Software Development
+Dates: August 2024 – Present
+Research topic: Accessible big data systems and HCI research
+Problem being solved: Building data visualization systems for high-stakes climate communication that support multiple accessibility needs.
+Methods / tools used:
+- Python
+- JavaScript
+- Highcharts API
+- GeoJSON
+- HTML
+- CSS
+- Figma
+
+What I specifically contributed:
+- Built data visualization systems using Highcharts
+- Tailored systems to 5+ accessibility profiles, including colorblind, low-vision, and screen reader users
+- Implemented a JavaScript ETL pipeline to process 2,000+ geospatial entries of hurricane and climate data
+
+Outcomes / papers / posters / demos:
+- Inclusive Climate Communications: Accessible Hurricane Tracking Maps for the Web
+-
+-
+
+Simple explanation: I research how to make complex climate and big-data interfaces more accessible and understandable.
+
+
+## Publications
+
+### Publication
+Title: Inclusive Climate Communications: Accessible Hurricane Tracking Maps for the Web
+Authors: Ishan Vepa, Jessica Herring, Isabella Martincic, Bruce N. Walker
+Year: 2026
+Venue: Web4All 2026: 23rd International Web for All Conference (W4A '26)
+Conference dates/location: April 13–14, 2026, Dubai, UAE
+Publisher: ACM
+DOI: 10.1145/3800424.3800436
+Summary: 
+
+
+## Projects
+
+### Project Name
+Project name: Agentic Data Visualization
+Type: Personal / Academic / Research / Internship / Startup
+Dates: 
+One-line description: Generates visualizations and insights from any type of data.
+Problem it solves: 
+Main features:
+-
+-
+-
+
+Tech stack:
+Frontend: 
+Backend: 
+Database: 
+AI/ML tools: 
+Deployment/tools: 
+
+Your role: 
+Biggest challenge: 
+How you solved it: 
+Results / impact: 
+Links: 
+
+### Project Name
+Project name: Dryft Notes
+Type: Personal / Academic / Research / Internship / Startup
+Dates: 
+One-line description: AI-powered cross-platform note-taking app.
+Problem it solves: 
+Main features:
+- Cross-platform web/iOS/Android note-taking
+- Interactive network graph visualization of notes
+- Agentic note cluster summarization
+
+Tech stack:
+Frontend: React Native
+Backend: Flask, Python
+Database: Supabase
+AI/ML tools: Scikit-Learn, LangChain FAISS, OpenAI API
+Deployment/tools: 
+
+Your role: 
+Biggest challenge: 
+How you solved it: 
+Results / impact: 
+Links: 
+
+### Project Name
+Project name: Multi-Agent AI Email Assistant
+Type: Personal / Academic / Research / Internship / Startup
+Dates: 
+One-line description: Multi-agent assistant for email and calendar.
+Problem it solves: 
+Main features:
+- Inbox triage with 4 ReAct subagents and a supervisor agent
+- Context-aware draft generation
+- Email prioritization
+
+Tech stack:
+Frontend: Next.js
+Backend: Flask, Python
+Database: 
+AI/ML tools: LangGraph, LangChain, OpenAI API
+Deployment/tools: Google API
+
+Your role: 
+Biggest challenge: 
+How you solved it: 
+Results / impact: Reduced email processing time by 74%; cut manual follow-up time by 60%
+Links: 
+
+### Project Name
+Project name: AI Academic Research Engine
+Type: Personal / Academic / Research / Internship / Startup
+Dates: 
+One-line description: RAG pipeline for 200M+ research papers.
+Problem it solves: 
+Main features:
+- Semantic search for academic papers
+- Vector search across 200M+ abstracts
+- 10+ REST endpoints for query processing
+
+Tech stack:
+Frontend: Next.js, React.js
+Backend: Flask, Python
+Database: 
+AI/ML tools: LangChain FAISS, Pandas
+Deployment/tools: 
+
+Your role: 
+Biggest challenge: 
+How you solved it: 
+Results / impact: Enables semantic search in under 2 seconds per query
+Links: 
+
+
+## Technical Skills
+
+### Programming Languages
+- Java
+- Python
+- C#
+- C
+- JavaScript
+- SQL
+- MySQL
+- HTML
+- CSS
+- TypeScript
+
+### Frameworks / Libraries
+- React.js
+- React Native
+- Next.js
+- Flask
+- Scikit-Learn
+- ASP.NET
+- Pandas
+- LangChain
+- JUnit
+- jQuery
+- D3.js
+
+### Tools / Platforms
+- Git
+- Docker
+- Visual Studio
+- Android Studio
+- AWS Amplify
+- Accurev SCM
+
+### AI / ML / Data Skills
+-
+-
+-
+
+### Design / UX / Research Skills
+-
+-
+-
+
+### Strongest Skills
+-
+-
+-
+
+
+## Interests and Focus Areas
+
+### Academic / Professional Interests
+- Human-Computer Interaction
+- Artificial Intelligence
+- accessible big data systems
+- data visualization
+
+### Industries I’m interested in
+-
+-
+-
+
+### Topics I enjoy learning about
+-
+-
+-
+
+### Long-term goals
+-
+-
+-
+
+
+## Personal Preferences
+
+### Favorites
+Favorite movies: The Batman, Don't Look Up, Skyfall
+Favorite TV shows: Suits, The Penguin,   
+Favorite book: 
+Favorite food: 
+Favorite music genre: Pop, R&B, Jazz
+Favorite artist/band: 
+Favorite sport / team: Soccer, Manchester United 
+Favorite hobby: Transcribing jazz music
+Favorite color: Red
+
+### General Preferences
+Morning person or night owl: 
+Coffee or tea: Coffee (Iced Shaken Espresso)
+Mac or Windows: Windows
+Frontend or backend: Full-stack
+Remote or in-person work: in-person
+Big team or small team: 
+
+### Fun facts
+- Trying new shaken espressos
+- Watching Premier League soccer
+- 
+
+
+## Personality and Working Style
+How I’d describe myself: 
+How others describe me: 
+Strengths:
+-
+-
+-
+
+Weaknesses / areas I’m improving:
+-
+-
+-
+
+Working style: 
+Leadership style: 
+Collaboration style: 
+Communication style: 
+
+
+## Achievements and Awards
+
+### Award / Recognition
+Name: 
+Organization: 
+Date: 
+Why it was awarded: 
+
+
+## Leadership and Involvement
+
+### Organization / Club / Initiative
+Name: 
+Role: 
+Dates: 
+What it is: 
+What I did:
+-
+-
+-
+
+Impact:
+-
+-
+-
+
+
+## Public Links
+LinkedIn: 
+GitHub: 
+Portfolio website: https://www.ishanvepa.com/
+Resume link: https://www.ishanvepa.com/Ishan_Vepa_Resume.pdf
+Google Scholar / publications: 
+Other relevant links: 
+
+
+## Timeline of Major Events
+- Aug 2022 — Began B.S. in Computer Science at Georgia Tech
+- May 2024 – Aug 2024 — Software Engineer Intern at Datamaxx Group
+- Aug 2024 – Present — Graduate Researcher / Graduate Research Assistant at Georgia Tech Sonification Lab & Design Studio
+- Sep 2024 – Nov 2024 — Augmented Reality Software Development Extern at Snap Inc.
+- Jun 2025 – Aug 2025 — SitScape internship
+- Dec 2025 — Completed B.S. in Computer Science
+- Jan 2026 — Began M.S. in Computer Science at Georgia Tech
+- May 2026 – Aug 2026 — Incoming Adobe Software Engineer Internship
+
+
+## FAQ Style Facts
+Q: Where did Ishan study?
+A: Ishan studied at the Georgia Institute of Technology, where he completed a B.S. in Computer Science and is now pursuing an M.S. in Computer Science with a Human-Computer Interaction specialization.
+
+Q: Where does Ishan work right now?
+A: Based on the website, Ishan is currently an incoming Software Engineer Intern at Adobe for Summer 2026.
+
+Q: What is Ishan studying?
+A: He is studying Computer Science at Georgia Tech, with a graduate focus in Human-Computer Interaction. His homepage also mentions interest in Artificial Intelligence.
+
+Q: What are Ishan’s technical strengths?
+A: His site and resume point to strengths across HCI, AI systems, data visualization, RAG pipelines, full-stack development, and accessibility-focused software development.
+
+Q: What projects has Ishan built?
+A: Projects listed include Agentic Data Visualization, Dryft Notes, Multi-Agent AI Email Assistant, and AI Academic Research Engine.
+
+Q: What is Ishan’s favorite movie?
+A: 
+
+Q: What is Ishan’s favorite food?
+A: 
+
+Q: What are Ishan’s hobbies?
+A: Transcribing jazz records, trying new shaken espressos, and watching Premier League soccer.
+
+Q: Where is Ishan located?
+A: Atlanta, GA.
+
+Q: What companies has Ishan worked at?
+A: Adobe, SitScape, Datamaxx Group, Snap Inc., and Georgia Tech Sonification Lab & Design Studio.
+
+
+## Alternate Names / Keywords / Retrieval Hints
+Name variants:
+- Ishan
+- Ishan Vepa
+
+Organizations associated with me:
+- Georgia Institute of Technology
+- Georgia Tech Sonification Lab & Design Studio
+- Adobe
+- SitScape
+- Datamaxx Group
+- Snap Inc.
+
+Topics associated with me:
+- Human-Computer Interaction
+- Artificial Intelligence
+- accessibility
+- big data systems
+- climate communication
+- data visualization
+- RAG
+- multi-agent systems
+- note-taking apps
+- email assistants
+
+Keywords people may search:
+- internships
+- research
+- Georgia Tech
+- projects
+- frontend
+- machine learning
+- favorite movie
+
+
+## Things the Bot Should Avoid Guessing
+If the information is unknown, the bot should say:
+“I don’t have that information in my knowledge base.”
+
+Do not guess about:
+- favorite movie
+- favorite food
+- family or relationship information
+- exact current employment beyond what is explicitly listed
+- personal opinions not stated on the website or resume
+
+
+## Update Log
+### Date
+What changed: Initial version populated from website and resume
+Updated section(s): Basic Identity, Education, Work Experience, Research, Publications, Projects, Skills, Timeline, FAQ
