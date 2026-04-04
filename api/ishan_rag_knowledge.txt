@@ -8,8 +8,8 @@ Current location: Atlanta, GA
 Hometown: Tallahassee, FL
 Birthtown: Memphis, TN
 Nationality / background: 
-Current role/title: Incoming Software Engineer Intern at Adobe; Graduate Researcher at Georgia Tech Sonification Lab & Design Studio
-Short bio: Ishan Vepa is a computer science student at Georgia Tech focused on Human-Computer Interaction and Artificial Intelligence. He is an incoming engineering intern at Adobe and has prior internship experience at SitScape and Datamaxx Group. He also conducts HCI research on accessible big data systems at the Georgia Tech Sonification Lab & Design Studio.
+Current role/title: Incoming Software Engineer Intern at Adobe; Incoming Software Development Engineer Co-op at IBM; Graduate Researcher at Georgia Tech Sonification Lab & Design Studio
+Short bio: Ishan Vepa is a computer science student at Georgia Tech focused on Human-Computer Interaction and Artificial Intelligence. He is an incoming Software Engineer Intern at Adobe (Summer 2026) and an incoming Software Development Engineer Co-op at IBM Silicon Valley Lab (Fall 2026). He has prior internship experience at SitScape and Datamaxx Group. He also conducts HCI research on accessible big data systems at the Georgia Tech Sonification Lab & Design Studio.
 
 Personal interests mentioned on website:
 - transcribing jazz records
@@ -48,8 +48,31 @@ Summary: Travelled across Europe (Italy, Germany, Austria, Czech Republic, Franc
 ## Work and Internship Experience
 
 ### Role
+Company / organization: IBM (Silicon Valley Lab)
+Job title: Software Development Engineer Co-op
+Location: San Jose, CA
+Start date - End date: Aug 2026 – Dec 2026
+Status: Incoming
+What I did:
+-
+-
+-
+
+Technologies used:
+-
+-
+-
+
+Key impact / accomplishments:
+-
+-
+-
+
+Short summary sentence: Ishan is scheduled to join IBM Silicon Valley Lab as a Software Development Engineer Co-op in Fall 2026.
+
+### Role
 Company / organization: Adobe
-Job title: Incoming Software Engineer Intern
+Job title: Software Engineer Intern
 Location: San Jose, CA
 Start date - End date: May 2026 – August 2026
 Status: Incoming
@@ -196,31 +219,31 @@ Summary:
 
 ### Project Name
 Project name: Agentic Data Visualization
-Type: Personal / Academic / Research / Internship / Startup
+Type: Personal
 Dates: 
 One-line description: Generates visualizations and insights from any type of data.
 Problem it solves: 
 Main features:
--
--
--
+- Automated data analysis
+- Generates charts and visual insights from any dataset
 
 Tech stack:
-Frontend: 
-Backend: 
-Database: 
-AI/ML tools: 
+Frontend: React Native
+Backend: Flask, Python
+Database: Supabase
+AI/ML tools: Scikit-Learn, LangChain FAISS, OpenAI API
 Deployment/tools: 
 
 Your role: 
 Biggest challenge: 
 How you solved it: 
 Results / impact: 
-Links: 
+Links:
+GitHub: https://github.com/ishanvepa/agentic-data-visualization
 
 ### Project Name
 Project name: Dryft Notes
-Type: Personal / Academic / Research / Internship / Startup
+Type: Personal
 Dates: 
 One-line description: AI-powered cross-platform note-taking app.
 Problem it solves: 
@@ -240,11 +263,12 @@ Your role:
 Biggest challenge: 
 How you solved it: 
 Results / impact: 
-Links: 
+Links:
+GitHub: https://github.com/ishanvepa/dryft-notes
 
 ### Project Name
-Project name: Multi-Agent AI Email Assistant
-Type: Personal / Academic / Research / Internship / Startup
+Project name: Agentic AI Email Assistant
+Type: Personal
 Dates: 
 One-line description: Multi-agent assistant for email and calendar.
 Problem it solves: 
@@ -257,18 +281,19 @@ Tech stack:
 Frontend: Next.js
 Backend: Flask, Python
 Database: 
-AI/ML tools: LangGraph, LangChain, OpenAI API
-Deployment/tools: Google API
+AI/ML tools: LangGraph, LangChain, ReAct Multi-Agentic Architecture, OpenAI API
+Deployment/tools: Gmail API, Google Calendar API
 
 Your role: 
 Biggest challenge: 
 How you solved it: 
 Results / impact: Reduced email processing time by 74%; cut manual follow-up time by 60%
-Links: 
+Links:
+GitHub: https://github.com/ishanvepa/agentic-email-assistant
 
 ### Project Name
 Project name: AI Academic Research Engine
-Type: Personal / Academic / Research / Internship / Startup
+Type: Personal
 Dates: 
 One-line description: RAG pipeline for 200M+ research papers.
 Problem it solves: 
@@ -281,14 +306,39 @@ Tech stack:
 Frontend: Next.js, React.js
 Backend: Flask, Python
 Database: 
-AI/ML tools: LangChain FAISS, Pandas
+AI/ML tools: LangChain FAISS, Python
 Deployment/tools: 
 
 Your role: 
 Biggest challenge: 
 How you solved it: 
 Results / impact: Enables semantic search in under 2 seconds per query
-Links: 
+Links:
+GitHub: https://github.com/ishanvepa/AI-Academic-Research-Engine
+
+### Project Name
+Project name: Computational Analysis of Contemporary Music
+Type: Personal
+Dates: 
+One-line description: Analyzed Billboard Hot 100 song patterns.
+Problem it solves: 
+Main features:
+- Web scraping of Billboard Hot 100 data
+- Computational pattern analysis of contemporary music trends
+
+Tech stack:
+Frontend: 
+Backend: Python
+Database: 
+AI/ML tools: 
+Deployment/tools: BeautifulSoup, urllib, xlsxwriter, openpyxl
+
+Your role: 
+Biggest challenge: 
+How you solved it: 
+Results / impact: 
+Links:
+GitHub: https://github.com/ishanvepa/pop-music-comparative-analyzer
 
 
 ## Technical Skills
@@ -385,7 +435,7 @@ Coffee or tea: Coffee (Iced Shaken Espresso)
 Mac or Windows: Windows
 Frontend or backend: Full-stack
 Remote or in-person work: in-person
-Big team or small team: 
+Big team or small team: either as long as its fast-paced or high impact
 
 ### Fun facts
 - Trying new shaken espressos
@@ -457,6 +507,7 @@ Other relevant links:
 - Dec 2025 — Completed B.S. in Computer Science
 - Jan 2026 — Began M.S. in Computer Science at Georgia Tech
 - May 2026 – Aug 2026 — Incoming Adobe Software Engineer Internship
+- Aug 2026 – Dec 2026 — Incoming IBM Silicon Valley Lab Software Development Engineer Co-op
 
 
 ## FAQ Style Facts
@@ -473,7 +524,7 @@ Q: What are Ishan’s technical strengths?
 A: His site and resume point to strengths across HCI, AI systems, data visualization, RAG pipelines, full-stack development, and accessibility-focused software development.
 
 Q: What projects has Ishan built?
-A: Projects listed include Agentic Data Visualization, Dryft Notes, Multi-Agent AI Email Assistant, and AI Academic Research Engine.
+A: Projects listed include Agentic Data Visualization, Dryft Notes, Agentic AI Email Assistant, AI Academic Research Engine, and Computational Analysis of Contemporary Music.
 
 Q: What is Ishan’s favorite movie?
 A: 
@@ -488,7 +539,7 @@ Q: Where is Ishan located?
 A: Atlanta, GA.
 
 Q: What companies has Ishan worked at?
-A: Adobe, SitScape, Datamaxx Group, Snap Inc., and Georgia Tech Sonification Lab & Design Studio.
+A: IBM (Silicon Valley Lab), Adobe, SitScape, Datamaxx Group, Snap Inc., and Georgia Tech Sonification Lab & Design Studio.
 
 
 ## Alternate Names / Keywords / Retrieval Hints
@@ -500,6 +551,7 @@ Organizations associated with me:
 - Georgia Institute of Technology
 - Georgia Tech Sonification Lab & Design Studio
 - Adobe
+- IBM (Silicon Valley Lab)
 - SitScape
 - Datamaxx Group
 - Snap Inc.
