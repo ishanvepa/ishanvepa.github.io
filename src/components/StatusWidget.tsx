@@ -62,15 +62,15 @@ function weatherCodeToIconInfo(code: number | null, isDay: boolean): WeatherIcon
 }
 
 export default function StatusWidget() {
-  const ATLANTA_LAT = 33.749;
-  const ATLANTA_LON = -84.388;
+  const SAN_JOSE_LAT = 37.3382;
+  const SAN_JOSE_LON = -121.8863;
 
   const [now, setNow] = useState(() => new Date());
   const [weatherData, setWeatherData] = useState<WeatherData>({
     temperature: null,
     weatherIcon: "...",
     weatherLabel: "Loading weather",
-    location: "Atlanta, GA",
+    location: "San Jose, CA",
   });
 
   useEffect(() => {
@@ -87,7 +87,7 @@ export default function StatusWidget() {
     async function loadWeather() {
       try {
         const weatherResp = await fetch(
-          `https://api.open-meteo.com/v1/forecast?latitude=${ATLANTA_LAT}&longitude=${ATLANTA_LON}&current=temperature_2m,weather_code,is_day&temperature_unit=fahrenheit`
+          `https://api.open-meteo.com/v1/forecast?latitude=${SAN_JOSE_LAT}&longitude=${SAN_JOSE_LON}&current=temperature_2m,weather_code,is_day&temperature_unit=fahrenheit`
         );
         const weatherJson = weatherResp.ok ? await weatherResp.json() : null;
 
@@ -107,7 +107,7 @@ export default function StatusWidget() {
             temperature: temp,
             weatherIcon: weatherInfo.icon,
             weatherLabel: weatherInfo.label,
-            location: "Atlanta, GA",
+            location: "San Jose, CA",
           });
         }
       } catch {
@@ -116,7 +116,7 @@ export default function StatusWidget() {
             temperature: null,
             weatherIcon: "-",
             weatherLabel: "Weather unavailable",
-            location: "Atlanta, GA",
+            location: "San Jose, CA",
           });
         }
       }
