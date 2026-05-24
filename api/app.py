@@ -25,6 +25,14 @@ if not os.getenv("OPENAI_API_KEY"):
 
 # Import agent after env vars are loaded (agent imports rag which imports OpenAI)
 from agent import chat, clear_session  # noqa: E402
+from rag import get_vector_store       # noqa: E402
+
+# Pre-warm the FAISS vector store at startup (not lazily on first request).
+# This surfaces file-not-found errors immediately and ensures the first
+# user query is no slower than subsequent ones.
+print("[App] Pre-loading FAISS vector store...")
+get_vector_store()
+print("[App] Vector store ready.")
 
 app = Flask(__name__)
 
