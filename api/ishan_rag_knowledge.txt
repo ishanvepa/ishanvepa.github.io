@@ -526,8 +526,6 @@ A: His site and resume point to strengths across HCI, AI systems, data visualiza
 Q: What projects has Ishan built?
 A: Projects listed include Agentic Data Visualization, Dryft Notes, Agentic AI Email Assistant, AI Academic Research Engine, and Computational Analysis of Contemporary Music.
 
-Q: What is Ishan’s favorite movie?
-A: 
 
 Q: What is Ishan’s favorite food?
 A: 
@@ -583,8 +581,6 @@ If the information is unknown, the bot should say:
 “I don’t have that information in my knowledge base.”
 
 Do not guess about:
-- favorite movie
-- favorite food
 - family or relationship information
 - exact current employment beyond what is explicitly listed
 - personal opinions not stated on the website or resume
