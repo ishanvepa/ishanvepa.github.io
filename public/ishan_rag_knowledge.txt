@@ -385,7 +385,6 @@ Coffee or tea: Coffee (Iced Shaken Espresso)
 Mac or Windows: Windows
 Frontend or backend: Full-stack
 Remote or in-person work: in-person
-Big team or small team: 
 
 ### Fun facts
 - Trying new shaken espressos
@@ -475,12 +474,6 @@ A: His site and resume point to strengths across HCI, AI systems, data visualiza
 Q: What projects has Ishan built?
 A: Projects listed include Agentic Data Visualization, Dryft Notes, Multi-Agent AI Email Assistant, and AI Academic Research Engine.
 
-Q: What is Ishan’s favorite movie?
-A: 
-
-Q: What is Ishan’s favorite food?
-A: 
-
 Q: What are Ishan’s hobbies?
 A: Transcribing jazz records, trying new shaken espressos, and watching Premier League soccer.
 
@@ -531,14 +524,6 @@ If the information is unknown, the bot should say:
 “I don’t have that information in my knowledge base.”
 
 Do not guess about:
-- favorite movie
-- favorite food
 - family or relationship information
 - exact current employment beyond what is explicitly listed
 - personal opinions not stated on the website or resume
-
-
-## Update Log
-### Date
-What changed: Initial version populated from website and resume
-Updated section(s): Basic Identity, Education, Work Experience, Research, Publications, Projects, Skills, Timeline, FAQ
