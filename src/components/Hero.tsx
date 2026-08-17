@@ -23,7 +23,7 @@ export default function Hero() {
         <Link href="https://github.com/ishanvepa" target="_blank">GitHub ↗</Link>
         <Link href="https://www.linkedin.com/in/ishanvepa/" target="_blank">LinkedIn ↗</Link>
         <Link href="mailto:ishanvepa171@gmail.com">Email ↗</Link>
-        <Link href="/Ishan_Vepa_Resume.pdf" target="_blank">Resume ↗</Link>
+        {/* <Link href="/Ishan_Vepa_Resume.pdf" target="_blank">Resume ↗</Link> */}
       </nav>
 
       {/* Bio */}

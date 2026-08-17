@@ -22,6 +22,13 @@ export const experience = [
     location: "San Jose, CA",
     logo: "/adobe_logo.png",
     fallback: "Ad",
+    bullets:[
+      "Mitigated bot abuse across Adobe’s commerce services with ML-based risk detection, flagging XXK+ abusive transactions daily and preventing $XXM+ in annualized fraud and compute losses",
+      "Engineered LightGBM fraud detection model scoring 200k+ transactions/day with 86% precision and 91% recall for identifying fraud, reducing false positives by 27%",
+      "Built an automated model retraining pipeline via Databricks cron job over XM+ transactions, engineering proprietary features, tuning with Optuna, and serving in real-time via internal inference service",
+      "Developed ARP Policy SDK: an agentic fraud-policy auditing service identifying duplicate/overlapping rules via Jaccard similarity, simulating impact over Databricks data, and drafting rule-engines from natural language",
+      "Skills: Python, LightGBM, Optuna, Scikit-Learn, Spark, Databricks, Jupyter Notebook, OpenAI API, SQL"
+    ],
   },
   {
     company: "SitScape",
@@ -30,6 +37,12 @@ export const experience = [
     location: "McLean, VA",
     logo: "/sitscape_logo.png",
     fallback: "SS",
+    bullets: [
+      "Engineered a Generative UI system with a multi-agent AI ReAct service using LangGraph/LangChain in Python that automates front-end UI and event handling, reducing developer build time by 75%.",
+      "Shipped a no-code RAG API, enabling 10+ Fortune 500 clients to deploy LLM-powered chat in production.",
+      "Authored comprehensive documentation on both services for use by a team of 30+ developers.",
+      "Skills: Python, LangGraph, LangChain, Flask, JavaScript, SQL, OpenAI API.",
+    ],
   },
   // {
   //   company: "Georgia Tech Sonification Lab & Design Studio",
@@ -45,6 +58,11 @@ export const experience = [
     location: "Tallahassee, FL",
     logo: "/datamaxx_logo.png",
     fallback: "Dm",
+    bullets: [
+      "Reduced user identity verification time by 67% (1 minute to 20 seconds) by developing an automated ID parsing and user face verification service in ASP.NET with AWS Textract and Rekognition API.",
+      "Enhanced user security screening efficiency for 100+ vendors by implementing a QR code visitor check-in system.",
+      "Skills: C#, ASP.NET MVC, jQuery, HTML, CSS, SQL, AWS API.",
+    ],
   },
 ] as const;
 

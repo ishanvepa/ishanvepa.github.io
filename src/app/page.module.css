@@ -91,7 +91,7 @@
   background: transparent;
   border: 1px solid transparent;
   transition: background 0.2s ease, border-color 0.2s ease;
-  cursor: default;
+  cursor: pointer;
 }
 
 .expCard:hover {
@@ -106,13 +106,20 @@
   margin-bottom: 20px;
   align-items: start;
   text-align: left;
+  list-style: none;
 }
 
-.expRow:last-child {
-  margin-bottom: 0;
+.expRow::-webkit-details-marker {
+  display: none;
 }
 
-.expCard:last-child .expRow {
+.expRow:focus-visible {
+  outline: 2px solid var(--text);
+  outline-offset: 4px;
+  border-radius: 4px;
+}
+
+.expCard:not([open]) .expRow {
   margin-bottom: 0;
 }
 
@@ -396,4 +403,26 @@
   .projGrid {
     grid-template-columns: 1fr;
   }
+}
+
+.expCard[open] .expRow {
+  margin-bottom: 10px;
+}
+
+.expBullets {
+  margin: 0 4px 10px 44px;
+  padding-left: 16px;
+  color: var(--subtle);
+  font-size: 12px;
+  line-height: 1.65;
+  text-align: left;
+  cursor: default;
+}
+
+.expBullets li {
+  text-align: left;
+}
+
+.expBullets li + li {
+  margin-top: 6px;
 }

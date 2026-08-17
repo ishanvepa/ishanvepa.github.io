@@ -7,16 +7,21 @@ export default function Experiences() {
     <section className={styles.section}>
       <h2 className={styles.sectionTitle}>Experience</h2>
       {experience.map((exp) => (
-        <div key={exp.company} className={styles.expCard}>
-          <div className={styles.expRow}>
+        <details key={exp.company} className={styles.expCard}>
+          <summary className={styles.expRow}>
             <ExpLogo src={exp.logo} alt={exp.company} fallback={exp.fallback} />
             <div>
               <div className={styles.expCompany}>{exp.company}</div>
               <div className={styles.expRole}>{exp.role}</div>
             </div>
             <div className={styles.expDate}>{exp.date}</div>
-          </div>
-        </div>
+          </summary>
+          <ul className={styles.expBullets}>
+            {exp.bullets.map((bullet) => (
+              <li key={bullet}>{bullet}</li>
+            ))}
+          </ul>
+        </details>
       ))}
     </section>
   );
