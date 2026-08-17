@@ -20,9 +20,11 @@ function formatTime(now: Date): string {
     hour: "numeric",
     minute: "2-digit",
     hour12: true,
+    timeZone: "America/Los_Angeles",
   }).format(now);
 
   const tzPart = new Intl.DateTimeFormat("en-US", {
+    timeZone: "America/Los_Angeles",
     timeZoneName: "short",
   })
     .formatToParts(now)

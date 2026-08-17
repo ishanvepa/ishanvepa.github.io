@@ -8,7 +8,7 @@ export const links = [
 
 export const experience = [
   // {
-  //   company: "IBM (Silicon Valley Lab)",
+  //   company: "IBM",
   //   role: "Software Development Engineer Co-op",
   //   date: "Aug 2026 – Dec 2026",
   //   location: "San Jose, CA",
@@ -25,7 +25,7 @@ export const experience = [
   },
   {
     company: "SitScape",
-    role: "AI Engineer Intern",
+    role: "Software Engineer Intern",
     date: "Jun 2025 – Aug 2025",
     location: "McLean, VA",
     logo: "/sitscape_logo.png",
