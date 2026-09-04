@@ -7,14 +7,15 @@ export const links = [
 ] as const;
 
 export const experience = [
-  // {
-  //   company: "IBM",
-  //   role: "Software Development Engineer Co-op",
-  //   date: "Aug 2026 – Dec 2026",
-  //   location: "San Jose, CA",
-  //   logo: "/ibm_logo_legacy.png",
-  //   fallback: "IBM",
-  // },
+  {
+    company: "IBM",
+    role: "Software Development Engineer Co-op",
+    date: "Aug 2026 – Dec 2026",
+    location: "San Jose, CA",
+    logo: "/ibm_logo_legacy.png",
+    fallback: "IBM",
+    bullets: [],
+  },
   {
     company: "Adobe",
     role: "Software Engineer Intern",
