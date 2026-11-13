@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Geist } from "next/font/google";
 import "./globals.css";
 import ThemeToggle from "@/components/ThemeToggle";
-import DotBackground from "@/components/DotBackground";
 import StatusWidget from "../components/StatusWidget";
 import ChatBot from "@/components/ChatBot";
 

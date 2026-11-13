@@ -107,7 +107,15 @@ export const publications = [
   },
 ] as const;
 
-export const projects = [
+type Project = {
+  name: string;
+  desc: string;
+  tags: readonly string[];
+  github: string | null;
+  image: string | null;
+};
+
+export const projects: readonly Project[] = [
   {
     name: "Royale Bench",
     desc: "A Clash Royale Benchmark for Language Models.",
