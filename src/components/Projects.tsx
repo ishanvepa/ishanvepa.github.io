@@ -18,22 +18,42 @@ export default function Projects() {
       <h2 className={styles.sectionTitle}>Projects</h2>
 
       <div className={styles.projGrid}>
-        {visible.map((proj) => (
-          <Link
-            key={proj.name}
-            href={proj.github}
-            target="_blank"
-            className={styles.projCard}
-            style={{ textDecoration: "none", color: "inherit" }}
-          >
-            <ProjectImage src={proj.image} alt={proj.name} />
-            <div className={styles.projName}>
-              <span>{proj.name}</span>
-              <span className={styles.projLink}>GitHub ↗</span>
+        {visible.map((proj) => {
+          const content = (
+            <>
+              {proj.image ? (
+                <ProjectImage src={proj.image} alt={proj.name} />
+              ) : (
+                <div className={styles.projImgWrap}>
+                  <div className={styles.projImgPlaceholder} style={{ display: "flex" }}>
+                    {proj.name}
+                  </div>
+                </div>
+              )}
+              <div className={styles.projName}>
+                <span>{proj.name}</span>
+                {proj.github && <span className={styles.projLink}>GitHub ↗</span>}
+              </div>
+              <div className={styles.projDesc}>{proj.desc}</div>
+            </>
+          );
+
+          return proj.github ? (
+            <Link
+              key={proj.name}
+              href={proj.github}
+              target="_blank"
+              className={styles.projCard}
+              style={{ textDecoration: "none", color: "inherit" }}
+            >
+              {content}
+            </Link>
+          ) : (
+            <div key={proj.name} className={styles.projCard} style={{ cursor: "default" }}>
+              {content}
             </div>
-            <div className={styles.projDesc}>{proj.desc}</div>
-          </Link>
-        ))}
+          );
+        })}
       </div>
 
       {totalPages > 1 && (

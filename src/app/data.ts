@@ -109,6 +109,13 @@ export const publications = [
 
 export const projects = [
   {
+    name: "Royale Bench",
+    desc: "A Clash Royale Benchmark for Language Models.",
+    tags: [],
+    github: null,
+    image: "/royaleBench.png",
+  },
+  {
     name: "Agentic Data Visualization",
     desc: "Generates visualizations and insights from any type of data.",
     tags: ["React Native", "Python", "Scikit-Learn", "LangChain FAISS", "Supabase", "Flask", "OpenAI API"],
