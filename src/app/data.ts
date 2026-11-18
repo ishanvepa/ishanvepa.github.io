@@ -112,6 +112,7 @@ type Project = {
   desc: string;
   tags: readonly string[];
   github: string | null;
+  website?: string;
   image: string | null;
 };
 
@@ -121,6 +122,7 @@ export const projects: readonly Project[] = [
     desc: "A Clash Royale Benchmark for Language Models.",
     tags: [],
     github: null,
+    website: "/royalebench/writeup.html",
     image: "/royaleBench.png",
   },
   {

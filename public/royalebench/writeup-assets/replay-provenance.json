@@ -1,0 +1,152 @@
+{
+  "case": "04-critical-cycle-and-connect",
+  "dataset": "royalebench/royalebench-v6@1",
+  "model": "anthropic/claude-opus-5-5",
+  "run_id": "45124458-3a52-4e73-b380-ee42f6934b19",
+  "presentation": "Current shared renderer, original recorded frames. No model calls or gameplay changes.",
+  "replays": {
+    "opus": {
+      "source": "runs/recent/v7-design/opus/04-critical-cycle-and-connect/artifacts/royale.tar.gz/04-critical-cycle-and-connect/artifacts/extracted/royale/replay.msgpack",
+      "source_sha256": "ec9095e16514cd5b31edce5b7bc91f21aaf3a2aa8c1333b12d82da43f6eab8f1",
+      "export_sha256": "ae2b9e56a264ceadcaac04ef40db4cc434d2ad868a8374278b701a29e5783d83",
+      "frames": 208,
+      "result": {
+        "winner": 1,
+        "crowns": [
+          0,
+          1
+        ],
+        "final_tick": 5847,
+        "final_hash": "f19e915d432c0ba4"
+      },
+      "deploys": [
+        {
+          "tick": 5640,
+          "team": 0,
+          "slot": 0,
+          "card": 30,
+          "x": 63000,
+          "y": 198000,
+          "status": 0
+        },
+        {
+          "tick": 5680,
+          "team": 0,
+          "slot": 0,
+          "card": 93,
+          "x": 135000,
+          "y": 189000,
+          "status": 0
+        },
+        {
+          "tick": 5720,
+          "team": 0,
+          "slot": 0,
+          "card": 108,
+          "x": 63000,
+          "y": 459000,
+          "status": 0
+        },
+        {
+          "tick": 5760,
+          "team": 0,
+          "slot": 0,
+          "card": 21,
+          "x": 63000,
+          "y": 270000,
+          "status": 0
+        },
+        {
+          "tick": 5800,
+          "team": 0,
+          "slot": 3,
+          "card": 119,
+          "x": 63000,
+          "y": 441000,
+          "status": 0
+        },
+        {
+          "tick": 5840,
+          "team": 0,
+          "slot": 3,
+          "card": 30,
+          "x": 79200,
+          "y": 162000,
+          "status": 0
+        }
+      ]
+    },
+    "reference": {
+      "source": "runs/royalebench-v6/docker/04-critical-cycle-and-connect/replay.msgpack",
+      "source_sha256": "70a1e4a106e45f76305ef6c564cb4a45235bf857aee6655b8c8cbceada69845b",
+      "export_sha256": "92eb0af6fafef94ae10384a81029f8760c4026da4b5c622e86fd435d89ef24e2",
+      "frames": 225,
+      "result": {
+        "winner": 0,
+        "crowns": [
+          1,
+          0
+        ],
+        "final_tick": 5864,
+        "final_hash": "a7691b83ebc7a24f"
+      },
+      "deploys": [
+        {
+          "tick": 5640,
+          "team": 0,
+          "slot": 0,
+          "card": 30,
+          "x": 63000,
+          "y": 180000,
+          "status": 0
+        },
+        {
+          "tick": 5680,
+          "team": 0,
+          "slot": 0,
+          "card": 93,
+          "x": 126000,
+          "y": 207000,
+          "status": 0
+        },
+        {
+          "tick": 5720,
+          "team": 0,
+          "slot": 0,
+          "card": 108,
+          "x": 63000,
+          "y": 459000,
+          "status": 0
+        },
+        {
+          "tick": 5760,
+          "team": 0,
+          "slot": 0,
+          "card": 21,
+          "x": 63000,
+          "y": 270000,
+          "status": 0
+        },
+        {
+          "tick": 5800,
+          "team": 0,
+          "slot": 3,
+          "card": 119,
+          "x": 89676,
+          "y": 155214,
+          "status": 0
+        },
+        {
+          "tick": 5840,
+          "team": 0,
+          "slot": 3,
+          "card": 30,
+          "x": 80910,
+          "y": 175788,
+          "status": 0
+        }
+      ]
+    }
+  },
+  "same_cards_and_deployment_ticks": true
+}

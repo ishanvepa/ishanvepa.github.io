@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import Link from "next/link";
 import { projects } from "@/app/data";
 import { ProjectImage } from "@/app/ImageWithFallback";
 import styles from "@/app/page.module.css";
@@ -19,6 +18,7 @@ export default function Projects() {
 
       <div className={styles.projGrid}>
         {visible.map((proj) => {
+          const href = proj.website ?? proj.github;
           const content = (
             <>
               {proj.image ? (
@@ -32,22 +32,27 @@ export default function Projects() {
               )}
               <div className={styles.projName}>
                 <span>{proj.name}</span>
-                {proj.github && <span className={styles.projLink}>GitHub ↗</span>}
+                {href && (
+                  <span className={styles.projLink}>
+                    {proj.website ? "Read writeup →" : "GitHub ↗"}
+                  </span>
+                )}
               </div>
               <div className={styles.projDesc}>{proj.desc}</div>
             </>
           );
 
-          return proj.github ? (
-            <Link
+          return href ? (
+            <a
               key={proj.name}
-              href={proj.github}
-              target="_blank"
+              href={href}
+              target={proj.website ? undefined : "_blank"}
+              rel={proj.website ? undefined : "noopener noreferrer"}
               className={styles.projCard}
               style={{ textDecoration: "none", color: "inherit" }}
             >
               {content}
-            </Link>
+            </a>
           ) : (
             <div key={proj.name} className={styles.projCard} style={{ cursor: "default" }}>
               {content}
